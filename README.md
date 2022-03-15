@@ -12,3 +12,5 @@ Le site comprendra :
 Notre équipe est constituée de 4 membres de la WildCode School, en formation sur la session Remote débutée le 28 février 2022
 
 Les membres de ce projet sont Sébastien, Ali, Stéphane et Basile
+
+Un dernier ajout
