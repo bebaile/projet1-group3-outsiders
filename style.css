@@ -317,9 +317,7 @@ main.equipe{
     height: calc((100vh - 50px - 84px) / 4 - 60px);
     width: 45ch;
 }
-.membre-staff:nth-child(odd)  .description{
-    
-}
+
 
 /*
 ** A propos - Basile

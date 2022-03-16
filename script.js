@@ -64,12 +64,17 @@ const generateStaffMembers = () => {
         section.appendChild(divContainer);
 
         const divImg = document.createElement("div");
-        divContainer.appendChild(divImg)
+        divImg.classList.add("portrait-membre");
+        divImg.style.backgroundImage = "url(" + membreEquipe[i].photo + ")";
+        divImg.style.backgroundSize = "cover";
+        divImg.style.backgroundPosition = "center";
+        divContainer.appendChild(divImg);
 
-        const portrait = document.createElement("img")
+       /* const portrait = document.createElement("img")
         portrait.src = membreEquipe[i].photo;
         portrait.classList.add("portrait-membre");
         divImg.appendChild(portrait);
+        */
 
         const divDescription = document.createElement("div");
         divDescription.classList.add("description");
