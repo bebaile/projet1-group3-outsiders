@@ -253,6 +253,61 @@ footer, footer a{
 ** A propos - Basile
 */
 
+header {
+    background-image: url("./img/mountain-landscape-gcbb2346f5_1920.jpg");
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header>h1 {
+    color: rgba(255, 255, 255, 0.884);
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.623));
+}
+
+main {
+    margin: 0 0.5rem;
+}
+
+section > div {
+    padding: 1rem 0;
+}
+
+section :nth-child(even) {
+    background-color: red;
+}
+
+.requirements div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sub-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sub-content :nth-child(2) {
+    padding: 0 0.8rem;
+    max-width: 65ch;
+}
+
+
+
+
+div > img {
+    height: 100px;
+}
+
+img#tools {
+    max-width: 96px;
+}
 
 /*
 ** 404 - ???
