@@ -248,6 +248,67 @@ footer, footer a{
 /*
 ** Qui sommes nous - Sébastien
 */
+main.equipe{
+    padding: 0;
+}
+h1{
+    font-size: 1.5rem;
+    margin-top: 0.325em 0;
+    font-weight: bold;
+
+    font-family: var(--font-h1);
+}
+
+h2{
+    font-size: 1rem;
+    margin: 0.415rem 0;
+
+    font-family: var(--font-h2)
+}
+
+
+p{
+    font-size: 0.8rem;
+    font-family: var(--font-p)
+}
+
+.equipe-container{
+    width: 80%;
+    margin: 0 auto;
+    height: calc((100vh - 50px - 80px) / 4);
+}
+
+.membre-staff:nth-child(odd){
+    background-color: var(--color-light);
+}
+.membre-staff:nth-child(odd) > .equipe-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.membre-staff:nth-child(even){
+    background-color: var(--color-middle);
+}
+.membre-staff:nth-child(even) > .equipe-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+.portrait-membre{
+    height: calc((100vh - 50px - 80px) / 4 - 60px);
+    margin: auto 0;
+}
+
+.description{
+    height: calc((100vh - 50px - 80px) / 4 - 60px);
+}
+.membre-staff:nth-child(odd)  .description{
+    text-align: end;
+}
 
 /*
 ** A propos - Basile
