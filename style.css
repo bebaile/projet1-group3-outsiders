@@ -251,7 +251,7 @@ footer, footer a{
 main.equipe{
     padding: 0;
 }
-h1{
+.equipe h1{
     font-size: 1.5rem;
     margin-top: 0.325em 0;
     font-weight: bold;
@@ -259,7 +259,7 @@ h1{
     font-family: var(--font-h1);
 }
 
-h2{
+.equipe h2{
     font-size: 1rem;
     margin: 0.415rem 0;
 
@@ -267,7 +267,7 @@ h2{
 }
 
 
-p{
+.equipe p{
     font-size: 0.8rem;
     font-family: var(--font-p)
 }
