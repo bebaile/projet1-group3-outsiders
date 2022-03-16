@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Martel&family=Roboto&display=swap');
+
+/*
+** Reset defaul CSS value
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*
+** Define variables
+*/
+
+:root{
+    --color-dark: #26547C;
+    --color-light: #FCDE9C;
+    --color-middle: #FFA552;
+    --color-ligthestDark: #BA5624;
+    --color-ligthest: #C4D6B0;
+
+    --font-h1: 'Roboto', sans-serif;
+    --font-h2: 'Fira Sans Extra Condensed', sans-serif;
+    --font-p: 'Martel', serif;
+}
+
+/*
+** Reset H1, H2 and p
+*/
+
+h1{
+    font-size: 2rem;
+    margin-top: 0.67em 0;
+    font-weight: bold;
+
+    font-family: var(--font-h1);
+}
+
+h2{
+    font-size: 1.5rem;
+    margin: 0.83rem 0;
+
+    font-family: var(--font-h2)
+}
+
+
+p{
+    font-family: var(--font-p)
+}
+
+/*
+** Mise en page global
+*/
+
+
+.container{
+    text-align: center;
+
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+.wrapper{
+    min-height: 100vh;
+
+    margin-bottom: -50px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    height: 50px; 
+
+    text-align: center;
+  }
+  
+
+
+  .main{
+    width: 100%;
+    padding: 1em 0 5em 0;
+}
+
+
+/*
+** Navbar
+*/
+
+.nav-btn {
+    cursor: pointer;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    padding: 0rem;
+    border-radius: 50%;
+    background: var(--color_backgrounddark);
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0.8rem;
+}
+
+.hamburger {
+    width: 50%;
+    position: absolute;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: var(--color-light);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav-menu{
+    text-align: center;
+    padding: 0 2rem;
+
+    background-color: var(--color-dark);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-menu .nav-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.nav-menu ul{
+    list-style: none;
+
+}
+.nav-menu li{
+    padding: 0.5rem 0;
+
+}
+
+.nav-menu a{
+    color: var(--color-light);
+}
+
+.nav-menu a:hover{
+    font-weight: bold;
+    color: white;
+}
+
+.nav__list{
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+
+}
+    .nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+
+@media (min-width: 600px) {
+
+    .nav__list {
+        visibility: visible;
+        height: auto;
+        position: relative;
+    }
+
+    .nav-menu ul{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
+
+/*
+** Footer
+*/
+
+footer{
+    height: 50px;
+
+    text-align: center;
+
+    background-color: var(--color-dark);
+
+    display: flex;
+    align-items: center;
+}
+    
+footer .credit{
+    margin: 0 auto;
+}
+
+footer, footer a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-light);
+}
+
+/*
+** Accueil - Stéphane
+*/
+
+
+/*
+** Profil - Ali
+*/
+
+/*
+** Qui sommes nous - Sébastien
+*/
+
+/*
+** A propos - Basile
+*/
+
+
+/*
+** 404 - ???
+*/
