@@ -252,15 +252,19 @@ main.equipe{
     padding: 0;
 }
 .equipe h1{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-top: 0.325em 0;
     font-weight: bold;
 
     font-family: var(--font-h1);
 }
 
+.equipe h1>span{
+    font-size: 0.9rem;
+}
+
 .equipe h2{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0.415rem 0;
 
     font-family: var(--font-h2)
@@ -275,7 +279,8 @@ main.equipe{
 .equipe-container{
     width: 80%;
     margin: 0 auto;
-    height: calc((100vh - 50px - 80px) / 4);
+    min-height: 170px;
+    height: calc((100vh - 50px - 84px) / 4);
 }
 
 .membre-staff:nth-child(odd){
@@ -299,15 +304,20 @@ main.equipe{
 }
 
 .portrait-membre{
-    height: calc((100vh - 50px - 80px) / 4 - 60px);
+    min-height: 110px;
+    height: calc((100vh - 50px - 84px) / 4 - 60px);
+    width: 45vw;
+    max-width: 95px;
     margin: auto 0;
 }
 
 .description{
-    height: calc((100vh - 50px - 80px) / 4 - 60px);
+    min-height: 120px;
+    height: calc((100vh - 50px - 84px) / 4 - 60px);
+    width: 45ch;
 }
 .membre-staff:nth-child(odd)  .description{
-    text-align: end;
+    
 }
 
 /*

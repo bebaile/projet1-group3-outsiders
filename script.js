@@ -17,31 +17,31 @@ navToggle.addEventListener('click', () => {
 
 const membreEquipe = {
     membre01 : {
-        photo: "url?",
-        nom: "Carl",
-        prenom: "Basile",
-        poste: "Product Owner",
-        complement: "Je sais pas qui mettre"
-    },
-    membre02 : {
-        photo: "url?",
+        photo: "",
         nom: "Belala",
         prenom: "Ali",
         poste: "---",
-        complement: "Je sais pas qui mettre"
+        complement: "Ali est en charge de la page de profil des membres."
+    },
+    membre02 : {
+        photo: "",
+        nom: "Carl",
+        prenom: "Basile",
+        poste: "Product Owner",
+        complement: "Basile est en charge de la communication avec le client et de la page \"A propos\"."
     },
     membre03 : {
-        photo: "url?",
+        photo: "",
         nom: "Feroussier",
         prenom: "Stéphane",
-        poste: "---",
-        complement: "Je sais pas qui mettre"
+        poste: "Grid Master",
+        complement: "Stéphane est en charge de l\'index du site."
     },
     membre04 : {
-        photo: "url?",
+        photo: "",
         nom: "Puigrenier",
         prenom: "Sébastien",
-        poste: "GitHub",
-        complement: "Je sais pas qui mettre"
+        poste: "GitHub Warrior",
+        complement: "Sébastien est en charge du GitHub et de la page équipe."
     },
 }
