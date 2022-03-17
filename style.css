@@ -249,6 +249,82 @@ footer, footer a{
 ** Qui sommes nous - Sébastien
 */
 
+:root{
+    --height-section: calc((100vh - 50px - 84px) / 4);
+}
+
+main.equipe{
+    padding: 0;
+}
+
+.equipe h1{
+    font-size: 1.1rem;
+    margin-top: 0.325em 0;
+    font-weight: bold;
+
+    font-family: var(--font-h1);
+}
+
+.equipe h1>span{
+    font-size: 0.9rem;
+}
+
+.equipe h2{
+    font-size: 0.8rem;
+    margin: 0.415rem 0;
+
+    font-family: var(--font-h2)
+}
+
+
+.equipe p{
+    font-size: 0.8rem;
+    font-family: var(--font-p)
+}
+
+.equipe-container{
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
+    min-height: 170px;
+    height: var(--height-section);
+}
+
+.membre-staff:nth-child(odd){
+    background-color: var(--color-light);
+}
+.membre-staff:nth-child(odd) > .equipe-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.membre-staff:nth-child(even){
+    background-color: var(--color-middle);
+}
+.membre-staff:nth-child(even) > .equipe-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+.portrait-membre{
+    min-height: 110px;
+    height: calc(var(--height-section) - 60px);
+    width: 45vw;
+    max-width: var(--height-section);
+    margin: auto 0;
+}
+
+.description{
+    min-height: 120px;
+    height: calc(var(--height-section) - 60px);
+    width: 45ch;
+}
+
+
 /*
 ** A propos - Basile
 */
