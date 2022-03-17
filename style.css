@@ -348,7 +348,7 @@ header {
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.623));
 }
 
-main {
+main.apropos{
     margin: 0 0.5rem;
     max-width: 500px;
     margin:auto
