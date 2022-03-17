@@ -244,6 +244,36 @@ footer, footer a{
 /*
 ** Profil - Ali
 */
+body{
+    background-color: var(--color-light);
+    
+
+}
+.photo-profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    box-shadow: ;
+}
+
+/*h2{
+    display: flex;
+    float: right;
+    font-size: 1rem;
+    box-shadow: ;
+}
+*/
+.descriptif{
+    font-size: 0.5rem;
+}
+
+
+button{
+
+}
+
+
 
 /*
 ** Qui sommes nous - Sébastien
