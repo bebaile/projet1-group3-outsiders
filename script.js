@@ -20,38 +20,29 @@ navToggle.addEventListener('click', () => {
 ** Fonction de génération de la page Equipe en fonction du tableau membreEquipe[]
 */
 
-const membreEquipe = [
-    {
-        photo: "https://thispersondoesnotexist.com/image",
-        nom: "Belala",
-        prenom: "Ali",
-        poste: "---",
-        complement: "Ali est en charge de la page de profil des membres."
-    },
-    {
-        photo: "https://thispersondoesnotexist.com/image",
-        nom: "Carl",
-        prenom: "Basile",
-        poste: "Product Owner",
-        complement: "Basile est en charge de la communication avec le client et de la page \"A propos\"."
-    },
-    {
-        photo: "https://thispersondoesnotexist.com/image",
-        nom: "Feroussier",
-        prenom: "Stéphane",
-        poste: "Grid Master",
-        complement: "Stéphane est en charge de l\'index du site."
-    },
-    {
-        photo: "https://thispersondoesnotexist.com/image",
-        nom: "Puigrenier",
-        prenom: "Sébastien",
-        poste: "GitHub Warrior",
-        complement: "Sébastien est en charge du GitHub et de la page équipe."
-    },
-]
 
 const generateStaffMembers = () => {
+let membreEquipe = []
+
+fetch("./membreEquipe.html")
+.then((resp) => resp.json())
+.then(function(data) {
+    console.log(data);
+    membreEquipe = data;
+    console.log(membreEquipe);
+    /*  let authors = data.results;
+  return authors.map(function(author) {
+    let li = createNode('li');
+    let img = createNode('img');
+    let span = createNode('span');
+    img.src = author.picture.medium;
+    span.innerHTML = `${author.name.first} ${author.name.last}`;
+    append(li, img);
+    append(li, span);
+    append(ul, li);
+  })*/
+    console.log(membreEquipe.length);
+
     for (let i=0; i < membreEquipe.length; i++){
         const main = document.querySelector("main");
 
@@ -94,4 +85,10 @@ const generateStaffMembers = () => {
 
         console.log("function was lauched !")
     }
+
+})
+.catch(function(error) {
+  console.log(error);
+});
+
 }
