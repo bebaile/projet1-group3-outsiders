@@ -240,6 +240,150 @@ footer, footer a{
 ** Accueil - Stéphane
 */
 
+.main-accueil{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.image {
+    margin-top: calc((100vh - 82px - 50px - 60vh)/2);
+    width: 90vw;
+    display : grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 15vh 15vh 15vh 15vh;
+}
+
+
+div[id^="image"] {
+    transform-origin: center center;
+    -webkit-transition: .3s ease-in-out; /* Safari et Chrome */
+    -moz-transition: .3s ease-in-out; /* Firefox */
+    -ms-transition: .3s ease-in-out; /* Internet Explorer 9 */
+    -o-transition: .3s ease-in-out; /* Opera */
+    transition: .3s ease-in-out;
+}
+div[id^="image"]:hover {
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+.background{
+    background-color: var(--color-dark); 
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.S-FEROUSSIER{
+    background-image: url("./img/FEROUSSIER Stéphane.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+
+}
+
+.A-BELALA{
+    background-image: url("./img/Photo Ali BELALA.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.B-CARLE{
+    background-image: url("./img/Basile CARLE.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.A-MESBAHI{
+    background-image: url("./img/Abdallah MESBAHI.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.A-FLOCH{
+    background-image: url("./img/Audren FLOCH.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.C-BOINET{
+    background-image: url("./img/Christophe BOINET.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.G-BESAMBA{
+    background-image: url("./img/Gloria BESAMBA.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.G-CALIEZ{
+    background-image: url("./img/Guillaume CALIEZ.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.K-PESET{
+    background-image: url("./img/Kevin PESET.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.O-POCHIC{
+    background-image: url("./img/Olivier POCHIC.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.O-COUDERT{
+    background-image: url("./img/Ophélie COUDERT.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.O-AGUDELO{
+    background-image: url("./img/Oscar AGUDELO.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vh;
+    height: 13vh;
+}
+
+
 
 /*
 ** Profil - Ali
