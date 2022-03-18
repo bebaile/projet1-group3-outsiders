@@ -256,6 +256,13 @@ body{
     height: 300px;
     
 }
+.main-profil{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-item: center;
+    margin: auto;
+}
 
 h1{
     display: flex;
@@ -271,24 +278,31 @@ h2{
 
 button{
     
-    float: right;
     background-color: var(--color-dark);
     border-radius: 50px;
     border-width: 0;
     box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
-    color: var(--color-light)
+    color: var(--color-light);
     cursor: pointer;
     display: inline-block;
-    font-family: `Roboto`, sans-serif;
     font-size: 1em;
     height: 50px;
     padding: 0 25px;
-    transition: all 200ms
+    transition: all 200ms;
+    margin: 10px;
+}
+    
+    
+
+.text-button{
+    color: var(--color-light);
+    
+}
 
 
     
 
-}
+
 
 
 
