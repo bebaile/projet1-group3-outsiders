@@ -388,16 +388,25 @@ div[id^="image"]:hover {
 /*
 ** Profil - Ali
 */
+/*
 body{
     background-color: var(--color-light);
     
 
-}
-.photo-profil{
+}*/
+
+.main-profilmembre{
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.photo-profil{
     height: 300px;
+    width: 150px;
+    
+    background-image: url("./img/Photo Ali BELALA.jpg");
+    background-size: cover;
+    background-position: center;
+
     
 }
 .main-profil{
@@ -407,7 +416,7 @@ body{
     align-item: center;
     margin: auto;
 }
-
+/*
 h1{
     display: flex;
     margin: 10px;
@@ -417,7 +426,7 @@ h1{
 h2{
     margin: 10px;
     padding: 10px;
-}
+}*/
 
 
 button{
