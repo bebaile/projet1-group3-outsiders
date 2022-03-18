@@ -379,7 +379,7 @@ div[id^="image"]:hover {
     background-image: url("./img/Oscar AGUDELO.jpg");
     background-size: cover;
     background-position: center;
-    width: 28vh;
+    width: 28vw;
     height: 13vh;
 }
 
