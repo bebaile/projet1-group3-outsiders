@@ -253,23 +253,40 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    box-shadow: ;
+    height: 300px;
+    
 }
 
-/*h2{
+h1{
     display: flex;
-    float: right;
-    font-size: 1rem;
-    box-shadow: ;
+    margin: 10px;
+    padding: 10px;
 }
-*/
-.descriptif{
-    font-size: 0.5rem;
+
+h2{
+    margin: 10px;
+    padding: 10px;
 }
 
 
 button{
+    
+    float: right;
+    background-color: var(--color-dark);
+    border-radius: 50px;
+    border-width: 0;
+    box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
+    color: var(--color-light)
+    cursor: pointer;
+    display: inline-block;
+    font-family: `Roboto`, sans-serif;
+    font-size: 1em;
+    height: 50px;
+    padding: 0 25px;
+    transition: all 200ms
+
+
+    
 
 }
 
