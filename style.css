@@ -582,20 +582,21 @@ section > div {
 .sub-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr;
     padding: 1rem;
 }
 
 .sub-content-title {
-  grid-column: 3/4;
-  text-align: right;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  text-align: center;
 }
 
 .sub-content-img {
-    grid-column: 1/2;
+    grid-column: 1/4;
     padding: 0 0.8rem 0 0 ;
     max-width: 65ch;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -605,8 +606,16 @@ section > div {
 }
 
 .sub-content-paragraph {
-    grid-column: 2/4;
+    grid-column: 1/4;
     text-align: left;
+}
+
+.paragraph {
+    margin-top: 0.5rem;
+}
+
+ul {
+    padding: 1rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -618,12 +627,14 @@ section > div {
     }
     
     .sub-content-title {
-      grid-column: 3/4;
+      grid-column: 1/4;
+      grid-row: 1/2;
       text-align: right;
     }
     
     .sub-content-img {
         grid-column: 1/2;
+        grid-row: 2/3;
         padding: 0 0.8rem 0 0 ;
         max-width: 65ch;
         text-align: left;
@@ -639,6 +650,23 @@ section > div {
         grid-column: 2/4;
         text-align: left;
     }
+
+    /* Affichage spécifique section du milieu */
+
+    #specific-title {
+        text-align: left;
+    }
+
+    #specific-image {
+        grid-column: 3/4;
+        text-align: right;
+    }
+
+    #specific-paragraph {
+        grid-column: 1/3;
+    }
+
+
 }
 
 
