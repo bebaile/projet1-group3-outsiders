@@ -24,24 +24,10 @@ navToggle.addEventListener('click', () => {
 const generateStaffMembers = () => {
 let membreEquipe = []
 
-fetch("./membreEquipe.html")
+fetch("./assets/equipe.json")
 .then((resp) => resp.json())
 .then(function(data) {
-    console.log(data);
     membreEquipe = data;
-    console.log(membreEquipe);
-    /*  let authors = data.results;
-  return authors.map(function(author) {
-    let li = createNode('li');
-    let img = createNode('img');
-    let span = createNode('span');
-    img.src = author.picture.medium;
-    span.innerHTML = `${author.name.first} ${author.name.last}`;
-    append(li, img);
-    append(li, span);
-    append(ul, li);
-  })*/
-    console.log(membreEquipe.length);
 
     for (let i=0; i < membreEquipe.length; i++){
         const main = document.querySelector("main");
