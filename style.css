@@ -240,14 +240,310 @@ footer, footer a{
 ** Accueil - Stéphane
 */
 
+.main-accueil{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.image {
+    margin-top: calc((100vh - 82px - 50px - 60vh)/2);
+    width: 90vw;
+    display : grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 15vh 15vh 15vh 15vh;
+}
+
+
+div[id^="image"] {
+    transform-origin: center center;
+    -webkit-transition: .3s ease-in-out; /* Safari et Chrome */
+    -moz-transition: .3s ease-in-out; /* Firefox */
+    -ms-transition: .3s ease-in-out; /* Internet Explorer 9 */
+    -o-transition: .3s ease-in-out; /* Opera */
+    transition: .3s ease-in-out;
+}
+div[id^="image"]:hover {
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+.background{
+    background-color: var(--color-dark); 
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.S-FEROUSSIER{
+    background-image: url("./img/FEROUSSIER Stéphane.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+
+}
+
+.A-BELALA{
+    background-image: url("./img/Photo Ali BELALA.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.B-CARLE{
+    background-image: url("./img/Basile CARLE.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.A-MESBAHI{
+    background-image: url("./img/Abdallah MESBAHI.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.A-FLOCH{
+    background-image: url("./img/Audren FLOCH.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.C-BOINET{
+    background-image: url("./img/Christophe BOINET.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.G-BESAMBA{
+    background-image: url("./img/Gloria BESAMBA.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.G-CALIEZ{
+    background-image: url("./img/Guillaume CALIEZ.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.K-PESET{
+    background-image: url("./img/Kevin PESET.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.O-POCHIC{
+    background-image: url("./img/Olivier POCHIC.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.O-COUDERT{
+    background-image: url("./img/Ophélie COUDERT.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.O-AGUDELO{
+    background-image: url("./img/Oscar AGUDELO.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+
 
 /*
 ** Profil - Ali
 */
+/*
+body{
+    background-color: var(--color-light);
+    
+
+}*/
+
+.card-profil{
+    background-color: var(--color-light);
+    width: 80%;
+    margin: auto;
+
+}
+.main-profilmembre{
+    display: flex;
+    justify-content: center;
+}
+.photo-profil{
+    height: 300px;
+    width: 150px;
+    
+    background-image: url("./img/Photo Ali BELALA.jpg");
+    background-size: cover;
+    background-position: center;
+
+    
+}
+.main-profil{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-item: center;
+    margin: auto;
+}
+/*
+h1{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+h2{
+    margin: 10px;
+    padding: 10px;
+}*/
+
+
+button{
+    
+    background-color: var(--color-dark);
+    border-radius: 50px;
+    border-width: 0;
+    box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
+    color: var(--color-light);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    height: 50px;
+    padding: 0 25px;
+    transition: all 200ms;
+    margin: 10px;
+}
+    
+    
+
+.text-button{
+    color: var(--color-light);
+    
+}
+
+
+    
+
+
+
+
 
 /*
 ** Qui sommes nous - Sébastien
 */
+
+:root{
+    --height-section: calc((100vh - 50px - 84px) / 4);
+}
+
+main.equipe{
+    padding: 0;
+}
+
+.equipe h1{
+    font-size: 1.1rem;
+    margin-top: 0.325em 0;
+    font-weight: bold;
+
+    font-family: var(--font-h1);
+}
+
+.equipe h1>span{
+    font-size: 0.9rem;
+}
+
+.equipe h2{
+    font-size: 0.8rem;
+    margin: 0.415rem 0;
+
+    font-family: var(--font-h2)
+}
+
+
+.equipe p{
+    font-size: 0.8rem;
+    font-family: var(--font-p)
+}
+
+.equipe-container{
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
+    min-height: 170px;
+    height: var(--height-section);
+}
+
+.membre-staff:nth-child(odd){
+    background-color: var(--color-light);
+}
+.membre-staff:nth-child(odd) > .equipe-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.membre-staff:nth-child(even){
+    background-color: var(--color-middle);
+}
+.membre-staff:nth-child(even) > .equipe-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+.portrait-membre{
+    min-height: 110px;
+    height: calc(var(--height-section) - 60px);
+    width: 45vw;
+    max-width: var(--height-section);
+    margin: auto 0;
+}
+
+.description{
+    min-height: 120px;
+    height: calc(var(--height-section) - 60px);
+    width: 45ch;
+}
+
 
 /*
 ** A propos - Basile
@@ -272,7 +568,7 @@ header {
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.623));
 }
 
-main {
+main.apropos{
     margin: 0 0.5rem;
     max-width: 600px;
     margin:auto
