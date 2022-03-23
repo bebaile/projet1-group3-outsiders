@@ -651,7 +651,59 @@ main.equipe{
 ** A propos - Basile
 */
 
+/* notre tuteur */
+
+.tutor {
+    background-color: var(--color-light);
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutor h1 {
+    font-size: 1rem;
+}
+
+.our-tutor-card {
+    border: 1px dotted rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    display: none;
+    max-width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.tutor-img {
+    width: 200px;
+    
+}
+
+.our-tutor-card img {
+    border-radius: 50%;
+    
+
+}
+
+.our-tutor-subcard {
+    max-width: 65ch;
+    margin:20px
+}
+
+.tutor-links {
+    display: flex;
+}
+
+.tutor-links img {
+    height: 30px;
+}
+
 /* Header - basile */
+
 
 header {
     background-image: url("./img/mountain-landscape-gcbb2346f5_1920.jpg");
@@ -717,6 +769,10 @@ ul {
 }
 
 @media screen and (min-width: 600px) {
+    .our-tutor-card {
+        flex-direction: row;
+    }
+    
     .sub-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
