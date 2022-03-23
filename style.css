@@ -706,8 +706,11 @@ main.equipe{
     margin: 1rem;
     padding: 1rem;
     display: none;
+    max-width: 600px;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+
 }
 
 .tutor-img {
@@ -723,7 +726,15 @@ main.equipe{
 
 .our-tutor-subcard {
     max-width: 65ch;
-    margin-left:20px
+    margin:20px
+}
+
+.tutor-links {
+    display: flex;
+}
+
+.tutor-links img {
+    height: 30px;
 }
 
 /* Header - basile */
@@ -798,6 +809,10 @@ ul {
 }
 
 @media screen and (min-width: 600px) {
+    .our-tutor-card {
+        flex-direction: row;
+    }
+    
     .sub-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
