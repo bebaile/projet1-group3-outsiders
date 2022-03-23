@@ -1,0 +1,29 @@
+[{
+    "photo": "'./img/Photo Ali BELALA.jpg'",
+    "nom": "Belala",
+    "prenom": "Ali",
+    "poste": "Flexbox Killer",
+    "complement": "Ali est en charge de la page de profil des membres et de l'intégration des éléments \"Font Awesome\"."
+},
+{
+    "photo": "'./img/Basile CARLE.jpg'",
+    "nom": "Carle",
+    "prenom": "Basile",
+    "poste": "Product Owner",
+    "complement": "Basile est en charge de la communication avec le client et de la page \"A propos\"."
+},
+{
+    "photo": "'./img/FEROUSSIER Stéphane.jpg'",
+    "nom": "Feroussier",
+    "prenom": "Stéphane",
+    "poste": "Grid Warrior",
+    "complement": "Stéphane est en charge de l'index du site."
+},
+{
+    "photo": "https://thispersondoesnotexist.com/image",
+    "nom": "Puigrenier",
+    "prenom": "Sébastien",
+    "poste": "GitHub Master",
+    "complement": "Sébastien est en charge du GitHub et de la page équipe."
+}
+]
