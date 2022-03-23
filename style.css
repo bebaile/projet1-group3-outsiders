@@ -81,7 +81,7 @@ p{
     text-align: center;
 
     width: 80%;
-    max-width: 1200px;
+    max-width: 600px;
 
     margin: 0 auto;
 
@@ -103,11 +103,10 @@ p{
   
 
 
-  .main{
+main{
     width: 100%;
     padding: 1em 0 5em 0;
 }
-
 
 /*
 ** Navbar
@@ -370,7 +369,7 @@ div[id^="image"]:hover {
 }
 
 .O-AGUDELO{
-    background-image: url("./img/Oscar AGUDELO.jpg");
+    background-image: url("./img/oscar.png");
 }
 
 .V-IELSCH{
@@ -409,14 +408,14 @@ div[id^="image"]:hover {
     justify-content: center;
 }
 .photo-profil{
-    height: 300px;
-    width: 200px;
+    height: 400px;
+    width: 300px;
     border-radius: 20px;
     
-    background-image: url("./img/Photo Ali BELALA.jpg");
+    /*background-image: url("./img/Photo Ali BELALA.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 1.5rem;
+    margin-top: 1.5rem;*/
 
     
 }
@@ -424,13 +423,18 @@ div[id^="image"]:hover {
 .photo-profil img{
     max-width: 100%;
     max-height: 100%;
+
+
+    border-radius: 20px;
+    margin-top: 1rem;
 }
+
 
 .main-profil{
     display: flex;
     width: 80%;
     height: 200px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 20px auto;
     
@@ -446,28 +450,48 @@ div[id^="image"]:hover {
 }
 
 .descriptif{
-    width: 60%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#titre2{
+   display: flex;
+   justify-content: center; 
+   width: 80%;
+   margin-top: 70px;
 }
 
+#identity{
+    display: flex;
+    padding-bottom: 100px;
+}
     
 .fa-brands,
+.fas,
 .fa-solid{
-    font-size: 2rem;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
     color: var(--color-light);
     background-color: var(--color-dark);
-    padding: 0.5rem;
+    padding: 1.5rem;
     border-radius: 999px;
-    margin: 0.2rem auto;
+    margin: 1rem auto;
 }    
 
-/*
-.text-button{
-    color: var(--color-light);  
-}*/
+
+.button{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 .flex{
     display: flex;
 }
@@ -498,13 +522,13 @@ div[id^="image"]:hover {
     --items: 5;
     --middle: 3;
     --position: 1;
-    pointer-events: none;
+    /*pointer-events: none;*/
   }
   
   div.item {
     position: absolute;
     top: 10px;
-    width: 400px;
+    width: 350px;
     height: 80%;
     min-height: 570px;
     border-radius: 20px;
@@ -736,7 +760,9 @@ header {
 
 
 /* styles généraux pour main */
-main.apropos{
+
+
+.apropos{
     margin: 0 0.5rem;
     max-width: 600px;
     margin:auto
@@ -821,7 +847,7 @@ ul {
     }
     
     
-    .sub-content-img > img {
+    .sub-content-img img {
         height: 100px;
         margin: 0.5rem 0;
     }

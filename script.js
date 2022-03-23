@@ -1,21 +1,30 @@
+/*
+** Index des fonctions :
+** Toogle() => gestion de l'affichage de la navbar
+** generateNavBar()
+** generateFooter()
+** generateStaffMembers() pour la page equipe.html
+** generatePage() a appeler sur chaque page pour générer navbar, footer et toogle
+**
+*/
+
 
 /*
 ** Fonction pour gestion de l'affichage du menu en mode mobile
 */
 const Toogle = () => {
-const navToggle = document.querySelector('.nav-btn');
-const nav = document.querySelector('.nav__list');
+    const navToggle = document.querySelector('.nav-btn');
+    const nav = document.querySelector('.nav__list');
 
-navToggle.addEventListener('click', () => {
-    nav.classList.toggle('nav--visible');
-})
+    navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav--visible');
+    })
 }
 
 
 /*
 ** génération de la navbar
 */
-
 const generateNavBar = () => {
     document.querySelector(".nav-menu").innerHTML = `
     <div>
@@ -39,7 +48,6 @@ const generateNavBar = () => {
 /*
 ** génération du footer
 */
-
 const generateFooter = () => {
     document.querySelector("footer").innerHTML = `
     <div class="credit">
@@ -47,23 +55,10 @@ const generateFooter = () => {
     </div>`
 }
 
-/*
-** Fonction permettant de générer les parties communes à l'ensembe des pages
-** Navbar
-** Footer
-*/
-
-const generatePage = () => {
-    generateNavBar();
-    generateFooter();
-    Toogle();
-}
 
 /*
 ** Fonction de génération de la page Equipe en fonction du tableau membreEquipe[]
 */
-
-
 const generateStaffMembers = () => {
 let membreEquipe = []
 
@@ -91,12 +86,6 @@ fetch("./assets/equipe.json")
         divImg.style.backgroundPosition = "center";
         divContainer.appendChild(divImg);
 
-       /* const portrait = document.createElement("img")
-        portrait.src = membreEquipe[i].photo;
-        portrait.classList.add("portrait-membre");
-        divImg.appendChild(portrait);
-        */
-
         const divDescription = document.createElement("div");
         divDescription.classList.add("description");
         divContainer.appendChild(divDescription);
@@ -123,16 +112,113 @@ fetch("./assets/equipe.json")
 }
 
 
+/*
+** Fonction permettant de générer les parties communes à l'ensembe des pages
+** Navbar
+** Footer
+*/
+const generatePage = () => {
+    generateNavBar();
+    generateFooter();
+    Toogle();
+}
+
+
+/*
+**
+*/
+
 
 // js pour la page apropos
 
-
+/*
 document.querySelector('.tutor').addEventListener('mouseover', function() {
   document.querySelector('.our-tutor-card').style.display = 'flex';
 });
 
 document.querySelector('.tutor').addEventListener('mouseleave', function() {
   document.querySelector('.our-tutor-card').style.display = 'none';
-});
+});*/
 
 
+
+const element = document.querySelector(".S-FEROUSSIER");
+element.addEventListener("click", generateCard);
+
+
+function generateCard() {
+
+
+        fetch("./assets/membres.json")
+        .then((resp) => resp.json())
+        .then(function(data) {
+            membreOutsiders = data;
+            for (let i = 0; i < membreOutsiders.length; i++){
+                if (element.className.split(' ')[0] === membreOutsiders[i].id){
+                    
+                    let memberLastName = membreOutsiders[i].nom[0].toUpperCase() + membreOutsiders[i].nom.slice(1).toLowerCase();
+                    let memberFirstName = membreOutsiders[i].prenom[0].toUpperCase() + membreOutsiders[i].prenom.slice(1).toLowerCase();
+                    let generatedHtml = `
+                    <div class="carousel"> 
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" checked/>
+                    <input type="radio" name="position" />
+                      <main id="carousel">
+                            <!-- première carte-->
+                          <div class="item">
+                            <div class="descriptif">
+                              <h2 id="titre2">Hobbies</h2>
+                                <p>${membreOutsiders[i].hobbys}</p>
+                              <h2 id="titre2">Pourquoi j'ai voulu être développeur web?</h2>
+                                <p>${membreOutsiders[i].why}</p>
+                            </div> 
+                          </div>
+                    
+                          <!-- deuxième carte -->
+                          <div class="item" id="alibelala">
+                            <div class="profil-container">
+                              <div class="photo-profil">
+                                <img src="${membreOutsiders[i].photo}" alt="" srcset="">
+                              </div >
+                            </div>
+                            <div class="main-profil">
+                              <div class="descriptif">            
+                                <h1 id="identity">${memberLastName}  <span>${memberFirstName}</span></h1> 
+                              </div> 
+                            </div>
+                          </div>
+                    
+                          <!-- troisième carte-->
+                          <div class="item">
+                            <!-- <div class="main-profil">-->
+                               <div class="button">
+                               <div> 
+                                 <div>
+                                   <a href="${membreOutsiders[i].github}"><i class="fa-brands fa-github"></i></a>
+                                 </div>
+                                 <div>
+                                   <a href="${membreOutsiders[i].linkedin}"><i class="fa-brands fa-linkedin"></i></a>
+                                 </div>
+                                 <div>
+                                   <a href="${membreOutsiders[i].email}"><i class="fas fa-envelope"></i></i></a>
+                                 </div>
+                                 <div>
+                                   <a href="https://github.com/alouch74"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                 </div>
+                               </div>
+                               </div>
+                             </div>
+                           </div>
+                       </main>
+                    </div>
+                    `;
+const newpage = document.querySelector("main").innerHTML = generatedHtml;
+                }
+
+            }
+
+        })
+        .catch(function(error) {
+        console.log(error);
+        });
+}
