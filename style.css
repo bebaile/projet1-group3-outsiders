@@ -252,13 +252,20 @@ footer, footer a{
 
 
 .image {
-    margin-top: calc((100vh - 82px - 50px - 60vh)/2);
+    /*margin-top: calc((100vh - 82px - 50px - 60vh)/2);*/
     width: 90vw;
     display : grid;
-    grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows: 15vh 15vh 15vh 15vh;
+    grid-template-columns:30vw 30vw 30vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
 }
 
+@media screen and (min-width :768px){
+    .image{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
 
 div[id^="image"] {
     transform-origin: center center;
@@ -275,6 +282,7 @@ div[id^="image"]:hover {
     -o-transform:scale(1.25); /* Opera */
     transform:scale(1.25);
 }
+
 .background{
     background-color: var(--color-dark); 
     width: 30vw;
@@ -284,15 +292,12 @@ div[id^="image"]:hover {
     justify-content: center;
 }
 
-
-
 .S-FEROUSSIER{
     background-image: url("./img/FEROUSSIER Stéphane.jpg");
     background-size: cover;
     background-position: center;
-    width: 28vw;
+    width: 28vw; 
     height: 13vh;
-
 }
 
 .A-BELALA{
@@ -377,6 +382,14 @@ div[id^="image"]:hover {
 
 .O-AGUDELO{
     background-image: url("./img/Oscar AGUDELO.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+}
+
+.V-IELSCH{
+    background-image: url("./img/photovalerie.png"); 
     background-size: cover;
     background-position: center;
     width: 28vw;
