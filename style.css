@@ -470,11 +470,12 @@ button{
 */
 
 :root{
-    --height-section: calc((100vh - 50px - 84px) / 4);
+    --height-section: calc((100vh - 50px - 84px - 2rem) / 4);
 }
 
 main.equipe{
     padding: 0;
+    margin: 1rem auto;
 }
 
 .equipe h1{
@@ -507,7 +508,7 @@ main.equipe{
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
-    min-height: 170px;
+    min-height: 160px;
     height: var(--height-section);
 }
 /*
@@ -533,8 +534,7 @@ main.equipe{
 }
 
 .portrait-membre{
-    height: calc(var(--height-section) - 60px);
-    min-height: 170px;
+    height: clamp(120px, calc(var(--height-section) - 60px), var(--height-section)) ;
     width:  clamp(160px, 45vw, var(--height-section));
     margin: auto 0;
     border-radius: 20px;
