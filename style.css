@@ -12,6 +12,7 @@
 
 img{
     max-width: 100%;
+    max-height: 100%;
 }
 
 a{
@@ -40,12 +41,20 @@ a{
 */
 
 h1{
-    font-size: 2rem;
-    margin-top: 0.67em 0;
+    font-size: 1.5rem;
+    margin-top: 0.67rem 0;
     font-weight: bold;
 
     font-family: var(--font-h1);
+    text-align: start;
 }
+
+h1>span{
+    font-size: 1rem;
+}
+
+
+
 
 h2{
     font-size: 1.5rem;
@@ -54,6 +63,10 @@ h2{
     font-family: var(--font-h2)
 }
 
+.equipe h2{
+    font-size: 0.8rem;
+    margin: 0.415rem 0;
+}
 
 p{
     font-family: var(--font-p)
@@ -242,6 +255,7 @@ footer, footer a{
 
 .main-accueil{
     padding: 0;
+    margin: 50px auto;
     width: 100%;
     height: 100%;
     display: flex;
@@ -250,19 +264,26 @@ footer, footer a{
 }
 
 
-
 .image {
-    /*margin-top: calc((100vh - 82px - 50px - 60vh)/2);*/
-    width: 90vw;
+    /*margin:calc((100vh - 82px - 50px - 1050px)/2) auto;*/
+    width: 90%;
+    max-width: 850px;
     display : grid;
-    grid-template-columns:30vw 30vw 30vw;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(5, 210px);
     justify-content: center;
+
+    padding: 0 1px;
+    background-color: var(--color-dark);
+    border-radius: 15px;
 }
 
 @media screen and (min-width :768px){
     .image{
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 210px);
+    /*margin-top: calc((100vh - 82px - 50px - 850px)/2);*/
+    
 
     }
 }
@@ -284,116 +305,76 @@ div[id^="image"]:hover {
 }
 
 .background{
-    background-color: var(--color-dark); 
-    width: 30vw;
-    height: 15vh;
+    /*background-color: var(--color-dark); */
+    min-width: 5px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.S-FEROUSSIER{
-    background-image: url("./img/FEROUSSIER Stéphane.jpg");
+.accueil-photo{
+    width: 95%;
+    height: 95%;
+
     background-size: cover;
     background-position: center;
-    width: 28vw; 
-    height: 13vh;
+
+    border-radius: 10px;
+
+}
+
+.S-FEROUSSIER{
+    background-image: url("./img/FEROUSSIER Stéphane.jpg");
 }
 
 .A-BELALA{
     background-image: url("./img/Photo Ali BELALA.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .B-CARLE{
     background-image: url("./img/Basile CARLE.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .A-MESBAHI{
     background-image: url("./img/Abdallah MESBAHI.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .A-FLOCH{
     background-image: url("./img/Audren FLOCH.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .C-BOINET{
     background-image: url("./img/Christophe BOINET.jpeg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .G-BESAMBA{
     background-image: url("./img/Gloria BESAMBA.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .G-CALIEZ{
     background-image: url("./img/Guillaume CALIEZ.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .K-PESET{
     background-image: url("./img/Kevin PESET.jpeg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .O-POCHIC{
     background-image: url("./img/Olivier POCHIC.jpeg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .O-COUDERT{
     background-image: url("./img/Ophélie COUDERT.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .O-AGUDELO{
     background-image: url("./img/Oscar AGUDELO.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .V-IELSCH{
     background-image: url("./img/photovalerie.png"); 
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 
@@ -409,20 +390,16 @@ div[id^="image"]:hover {
 }
 
 .profil-container{
-    background-color: var(--color-light);
     width: 100%;
+    display: flex;
+    justify-content: center;
     
 }
 
-.photo-profil{
-    display: flex;
-    /*justify-content: center;
-    align-items: center;
-    height: 300px;*/
-}*/
+
+
 
 .card-profil{
-    background-color: var(--color-light);
     width: 80%;
     margin: auto;
 
@@ -433,11 +410,13 @@ div[id^="image"]:hover {
 }
 .photo-profil{
     height: 300px;
-    width: 150px;
+    width: 200px;
+    border-radius: 20px;
     
     background-image: url("./img/Photo Ali BELALA.jpg");
     background-size: cover;
     background-position: center;
+    margin-top: 1.5rem;
 
     
 }
@@ -449,23 +428,13 @@ div[id^="image"]:hover {
 
 .main-profil{
     display: flex;
-    width: 80vw;
+    width: 80%;
+    height: 200px;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 20px auto;
     
 }
-/*
-h1{
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-}
-
-h2{
-    margin: 10px;
-    padding: 10px;
-}*/
 
 .profil-container .flex{
     display: flex;
@@ -475,6 +444,15 @@ h2{
     border-radius: 999px;
     cursor: pointer;
 }
+
+.descriptif{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
     
 .fa-brands,
 .fa-solid{
@@ -490,13 +468,15 @@ h2{
 .text-button{
     color: var(--color-light);  
 }*/
-
+.flex{
+    display: flex;
+}
 
   .carousel {
-    height: 600px;
-    margin: 0;
+    height: 80%;
+    margin: 10vh 0 0 0;
     display: grid;
-    grid-template-rows: 500px 100px;
+    grid-template-rows: 600px 40px;
     grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
     align-items: center;
     justify-items: center;
@@ -504,10 +484,11 @@ h2{
   }
   
   main#carousel {
+    margin: 10vh 0 10vh 0;
     grid-row: 1 / 2;
     grid-column: 1 / 8;
-    width: 100vw;
-    height: 1000px;
+    width: 95vw;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -522,8 +503,10 @@ h2{
   
   div.item {
     position: absolute;
+    top: 10px;
     width: 400px;
-    height: 300px;
+    height: 80%;
+    min-height: 570px;
     border-radius: 20px;
     background-color: coral;
     --r: calc(var(--position) - var(--offset));
@@ -532,6 +515,7 @@ h2{
     transform: rotateY(calc(-10deg * var(--r)))
       translateX(calc(-300px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
+
   }
   
   div.item:nth-of-type(1) {
@@ -613,25 +597,6 @@ main.equipe{
     margin: 1rem auto;
 }
 
-.equipe h1{
-    font-size: 1.1rem;
-    margin-top: 0.325em 0;
-    font-weight: bold;
-
-    font-family: var(--font-h1);
-    text-align: start;
-}
-
-.equipe h1>span{
-    font-size: 0.9rem;
-}
-
-.equipe h2{
-    font-size: 0.8rem;
-    margin: 0.415rem 0;
-
-    font-family: var(--font-h2)
-}
 
 
 .equipe p{
@@ -752,11 +717,6 @@ header {
 }
 
 
-
-.header>h1 {
-    color: rgba(255, 255, 255, 0.884);
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.623));
-}
 
 /* styles généraux pour main */
 main.apropos{
