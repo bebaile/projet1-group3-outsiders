@@ -313,7 +313,6 @@ main.equipe{
 }
 
 .portrait-membre{
-    min-height: 110px;
     height: calc(var(--height-section) - 60px);
     min-height: 170px;
     width:  clamp(160px, 45vw, var(--height-section));
