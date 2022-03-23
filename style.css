@@ -76,7 +76,7 @@ p{
 
 .wrapper{
     min-height: 100vh;
-
+    min-width: 320px;
     margin-bottom: -50px; /* the bottom margin is the negative value of the footer's height */
 }
 
