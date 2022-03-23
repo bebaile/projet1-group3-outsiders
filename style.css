@@ -667,6 +667,12 @@ main.equipe{
 
 .tutor > h1:hover {
     color: var(--color-ligthestDark);
+    font-size: 1.2rem;
+}
+
+@keyframes tutor-card-animation {
+    from {background-color: var(--color-dark);}
+    to {background-color: white;}
 }
 
 .our-tutor-card {
@@ -679,9 +685,12 @@ main.equipe{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    animation-name: tutor-card-animation;
+    animation-duration: 1.5s;
     
-    
-}
+}    
+
+
 
 .tutor-img {
     width: 200px;
@@ -707,6 +716,7 @@ main.equipe{
 
 .tutor-links img {
     height: 30px;
+    width: 30px;
 }
 
 /* Header - basile */
@@ -775,6 +785,7 @@ ul {
     padding: 1rem;
 }
 
+
 @media screen and (min-width: 600px) {
     
     
@@ -784,7 +795,7 @@ ul {
 
     .tutor-links {
         flex-direction: column;
-        width: 10%;
+        width: 12%;
         padding-left: 1rem;
     }
     
