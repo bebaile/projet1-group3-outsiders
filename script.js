@@ -131,19 +131,20 @@ const generatePage = () => {
 
 // js pour la page apropos
 
-
+/*
 document.querySelector('.tutor').addEventListener('mouseover', function() {
   document.querySelector('.our-tutor-card').style.display = 'flex';
 });
 
 document.querySelector('.tutor').addEventListener('mouseleave', function() {
   document.querySelector('.our-tutor-card').style.display = 'none';
-});
+});*/
 
 
 
 const element = document.querySelector(".S-FEROUSSIER");
 element.addEventListener("click", generateCard);
+
 
 function generateCard() {
 
@@ -158,53 +159,57 @@ function generateCard() {
                     let memberLastName = membreOutsiders[i].nom[0].toUpperCase() + membreOutsiders[i].nom.slice(1).toLowerCase();
                     let memberFirstName = membreOutsiders[i].prenom[0].toUpperCase() + membreOutsiders[i].prenom.slice(1).toLowerCase();
                     let generatedHtml = `
-            <div class="carousel"> 
-              <input type="radio" name="position" />
-              <input type="radio" name="position" checked />
-              <input type="radio" name="position" />
-                <main id="carousel">
-                    <!-- première carte-->
-                    <div class="item">
-                      <div class="descriptif">
-                      <p>${membreOutsiders[i].hobbys}</p>
-                      <p>${membreOutsiders[i].why}</p>
-                      </div> 
-                    </div>
+                    <div class="carousel"> 
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" checked/>
+                    <input type="radio" name="position" />
+                      <main id="carousel">
+                            <!-- première carte-->
+                          <div class="item">
+                            <div class="descriptif">
+                              <h2 id="titre2">Hobbies</h2>
+                                <p>${membreOutsiders[i].hobbys}</p>
+                              <h2 id="titre2">Pourquoi j'ai voulu être développeur web?</h2>
+                                <p>${membreOutsiders[i].why}</p>
+                            </div> 
+                          </div>
                     
-                    <!-- deuxième carte -->
-                    <div class="item">
-                      <div class="profil-container">
-                      <div class="photo-profil">
-                      <img src="${membreOutsiders[i].photo}" alt="" srcset="">
-                    </div >
-                      </div>
-                      <div class="main-profil">
-                        <div class="descriptif">
-                          <h1>${memberLastName}  <span>${memberFirstName}</span></h1> 
-                        </div> 
-                      </div>
-                    </div>
+                          <!-- deuxième carte -->
+                          <div class="item" id="alibelala">
+                            <div class="profil-container">
+                              <div class="photo-profil">
+                                <img src="${membreOutsiders[i].photo}" alt="" srcset="">
+                              </div >
+                            </div>
+                            <div class="main-profil">
+                              <div class="descriptif">            
+                                <h1 id="identity">${memberLastName}  <span>${memberFirstName}</span></h1> 
+                              </div> 
+                            </div>
+                          </div>
                     
-                    <!-- troisième carte-->
-                    <div class="item">
-                      <div class="main-profil">
-                        <div> 
-                          <div>
-                            <a href="${membreOutsiders[i].github}"><img src="./img/github-brands.svg" alt="" srcset=""></a>
-                          </div>
-                          <div>
-                            <a href="${membreOutsiders[i].linkedin}"><i class="fa-brands fa-linkedin"></i></a>
-                          </div>
-                        <div>
-                          <a href="${membreOutsiders[i].email}"><i class="fas fa-envelope"></i></i></a>
-                        </div>
-                          <div>
-                            <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </main>
+                          <!-- troisième carte-->
+                          <div class="item">
+                            <!-- <div class="main-profil">-->
+                               <div class="button">
+                               <div> 
+                                 <div>
+                                   <a href="${membreOutsiders[i].github}"><i class="fa-brands fa-github"></i></a>
+                                 </div>
+                                 <div>
+                                   <a href="${membreOutsiders[i].linkedin}"><i class="fa-brands fa-linkedin"></i></a>
+                                 </div>
+                                 <div>
+                                   <a href="${membreOutsiders[i].email}"><i class="fas fa-envelope"></i></i></a>
+                                 </div>
+                                 <div>
+                                   <a href="https://github.com/alouch74"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                 </div>
+                               </div>
+                               </div>
+                             </div>
+                           </div>
+                       </main>
                     </div>
                     `;
 const newpage = document.querySelector("main").innerHTML = generatedHtml;

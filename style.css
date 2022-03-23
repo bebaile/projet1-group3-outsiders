@@ -522,7 +522,7 @@ div[id^="image"]:hover {
     --items: 5;
     --middle: 3;
     --position: 1;
-    pointer-events: none;
+    /*pointer-events: none;*/
   }
   
   div.item {
