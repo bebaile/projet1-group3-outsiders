@@ -665,6 +665,10 @@ main.equipe{
     font-size: 1rem;
 }
 
+.tutor > h1:hover {
+    color: var(--color-ligthestDark);
+}
+
 .our-tutor-card {
     border: 1px dotted rgba(0, 0, 0, 0.61);
     border-radius: 10px;
@@ -675,7 +679,8 @@ main.equipe{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-
+    
+    
 }
 
 .tutor-img {
@@ -695,7 +700,9 @@ main.equipe{
 }
 
 .tutor-links {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .tutor-links img {
@@ -769,8 +776,16 @@ ul {
 }
 
 @media screen and (min-width: 600px) {
+    
+    
     .our-tutor-card {
         flex-direction: row;
+    }
+
+    .tutor-links {
+        flex-direction: column;
+        width: 10%;
+        padding-left: 1rem;
     }
     
     .sub-content {
