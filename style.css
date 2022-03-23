@@ -549,7 +549,7 @@ main.equipe{
 ** A propos - Basile
 */
 
-
+/* Header - basile */
 header {
     background-image: url("./img/mountain-landscape-gcbb2346f5_1920.jpg");
     background-size: cover;
@@ -568,6 +568,7 @@ header {
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.623));
 }
 
+/* styles généraux pour main */
 main.apropos{
     margin: 0 0.5rem;
     max-width: 600px;
@@ -581,27 +582,69 @@ section > div {
 .sub-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
     padding: 1rem;
 }
 
-section :first-child {
+.sub-content-title {
   grid-column: 3/4;
   text-align: right;
 }
 
-section :nth-child(2) {
+.sub-content-img {
     grid-column: 1/2;
-}
-
-section :nth-child(3) {
-    grid-column: 2/4;
+    padding: 0 0.8rem 0 0 ;
+    max-width: 65ch;
     text-align: left;
 }
 
 
+.sub-content-img > img {
+    height: 100px;
+    margin: 0.5rem 0;
+}
 
-#specific {
+.sub-content-paragraph {
+    grid-column: 2/4;
+    text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+    .sub-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
+        padding: 1rem;
+    }
+    
+    .sub-content-title {
+      grid-column: 3/4;
+      text-align: right;
+    }
+    
+    .sub-content-img {
+        grid-column: 1/2;
+        padding: 0 0.8rem 0 0 ;
+        max-width: 65ch;
+        text-align: left;
+    }
+    
+    
+    .sub-content-img > img {
+        height: 100px;
+        margin: 0.5rem 0;
+    }
+    
+    .sub-content-paragraph {
+        grid-column: 2/4;
+        text-align: left;
+    }
+}
+
+
+/* style specific to the midle subcontent */
+
+/* #specific-title {
     grid-column: 1/4;
 }
 
@@ -623,19 +666,9 @@ section :nth-child(3) {
 #specific-image {
     grid-column: 3/4;
     text-align: right;
-}
+} */
 
-.sub-content :nth-child(2) {
-    padding: 0 0.8rem 0 0 ;
-    max-width: 65ch;
-    text-align: left;
-}
-
-div > img {
-    height: 100px;
-    margin: 0.5rem 0;
-}
-
+/* affichage specific img tools */
 img#tools {
     max-width: 96px;
 }
