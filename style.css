@@ -12,6 +12,7 @@
 
 img{
     max-width: 100%;
+    max-height: 100%;
 }
 
 a{
@@ -40,12 +41,20 @@ a{
 */
 
 h1{
-    font-size: 2rem;
-    margin-top: 0.67em 0;
+    font-size: 1.5rem;
+    margin-top: 0.67rem 0;
     font-weight: bold;
 
     font-family: var(--font-h1);
+    text-align: start;
 }
+
+h1>span{
+    font-size: 1rem;
+}
+
+
+
 
 h2{
     font-size: 1.5rem;
@@ -54,6 +63,10 @@ h2{
     font-family: var(--font-h2)
 }
 
+.equipe h2{
+    font-size: 0.8rem;
+    margin: 0.415rem 0;
+}
 
 p{
     font-family: var(--font-p)
@@ -409,20 +422,16 @@ div[id^="image"]:hover {
 }
 
 .profil-container{
-    background-color: var(--color-light);
     width: 100%;
+    display: flex;
+    justify-content: center;
     
 }
 
-.photo-profil{
-    display: flex;
-    /*justify-content: center;
-    align-items: center;
-    height: 300px;*/
-}*/
+
+
 
 .card-profil{
-    background-color: var(--color-light);
     width: 80%;
     margin: auto;
 
@@ -438,6 +447,7 @@ div[id^="image"]:hover {
     background-image: url("./img/Photo Ali BELALA.jpg");
     background-size: cover;
     background-position: center;
+    margin-top: 1.5rem;
 
     
 }
@@ -449,23 +459,13 @@ div[id^="image"]:hover {
 
 .main-profil{
     display: flex;
-    width: 80vw;
+    width: 80%;
+    height: 200px;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 20px auto;
     
 }
-/*
-h1{
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-}
-
-h2{
-    margin: 10px;
-    padding: 10px;
-}*/
 
 .profil-container .flex{
     display: flex;
@@ -475,6 +475,15 @@ h2{
     border-radius: 999px;
     cursor: pointer;
 }
+
+.descriptif{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
     
 .fa-brands,
 .fa-solid{
@@ -490,13 +499,15 @@ h2{
 .text-button{
     color: var(--color-light);  
 }*/
-
+.flex{
+    display: flex;
+}
 
   .carousel {
-    height: 600px;
-    margin: 0;
+    height: 80%;
+    margin: 10vh 0 0 0;
     display: grid;
-    grid-template-rows: 500px 100px;
+    grid-template-rows: 600px 40px;
     grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
     align-items: center;
     justify-items: center;
@@ -504,10 +515,11 @@ h2{
   }
   
   main#carousel {
+    margin: 10vh 0 10vh 0;
     grid-row: 1 / 2;
     grid-column: 1 / 8;
-    width: 100vw;
-    height: 1000px;
+    width: 95vw;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -522,8 +534,10 @@ h2{
   
   div.item {
     position: absolute;
+    top: 10px;
     width: 400px;
-    height: 300px;
+    height: 80%;
+    min-height: 570px;
     border-radius: 20px;
     background-color: coral;
     --r: calc(var(--position) - var(--offset));
@@ -532,6 +546,7 @@ h2{
     transform: rotateY(calc(-10deg * var(--r)))
       translateX(calc(-300px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
+
   }
   
   div.item:nth-of-type(1) {
@@ -613,25 +628,6 @@ main.equipe{
     margin: 1rem auto;
 }
 
-.equipe h1{
-    font-size: 1.1rem;
-    margin-top: 0.325em 0;
-    font-weight: bold;
-
-    font-family: var(--font-h1);
-    text-align: start;
-}
-
-.equipe h1>span{
-    font-size: 0.9rem;
-}
-
-.equipe h2{
-    font-size: 0.8rem;
-    margin: 0.415rem 0;
-
-    font-family: var(--font-h2)
-}
 
 
 .equipe p{
@@ -700,11 +696,6 @@ header {
 }
 
 
-
-.header>h1 {
-    color: rgba(255, 255, 255, 0.884);
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.623));
-}
 
 /* styles généraux pour main */
 main.apropos{
