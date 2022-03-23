@@ -395,6 +395,12 @@ body{
 
 }*/
 
+.card-profil{
+    background-color: var(--color-light);
+    width: 80%;
+    margin: auto;
+
+}
 .main-profilmembre{
     display: flex;
     justify-content: center;
