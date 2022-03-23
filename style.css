@@ -255,6 +255,7 @@ footer, footer a{
 
 .main-accueil{
     padding: 0;
+    margin: 50px auto;
     width: 100%;
     height: 100%;
     display: flex;
@@ -263,19 +264,26 @@ footer, footer a{
 }
 
 
-
 .image {
-    /*margin-top: calc((100vh - 82px - 50px - 60vh)/2);*/
-    width: 90vw;
+    /*margin:calc((100vh - 82px - 50px - 1050px)/2) auto;*/
+    width: 90%;
+    max-width: 850px;
     display : grid;
-    grid-template-columns:30vw 30vw 30vw;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(5, 210px);
     justify-content: center;
+
+    padding: 0 1px;
+    background-color: var(--color-dark);
+    border-radius: 15px;
 }
 
 @media screen and (min-width :768px){
     .image{
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 210px);
+    /*margin-top: calc((100vh - 82px - 50px - 850px)/2);*/
+    
 
     }
 }
@@ -297,116 +305,76 @@ div[id^="image"]:hover {
 }
 
 .background{
-    background-color: var(--color-dark); 
-    width: 30vw;
-    height: 15vh;
+    /*background-color: var(--color-dark); */
+    min-width: 5px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.S-FEROUSSIER{
-    background-image: url("./img/FEROUSSIER Stéphane.jpg");
+.accueil-photo{
+    width: 95%;
+    height: 95%;
+
     background-size: cover;
     background-position: center;
-    width: 28vw; 
-    height: 13vh;
+
+    border-radius: 10px;
+
+}
+
+.S-FEROUSSIER{
+    background-image: url("./img/FEROUSSIER Stéphane.jpg");
 }
 
 .A-BELALA{
     background-image: url("./img/Photo Ali BELALA.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .B-CARLE{
     background-image: url("./img/Basile CARLE.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .A-MESBAHI{
     background-image: url("./img/Abdallah MESBAHI.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .A-FLOCH{
     background-image: url("./img/Audren FLOCH.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .C-BOINET{
     background-image: url("./img/Christophe BOINET.jpeg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .G-BESAMBA{
     background-image: url("./img/Gloria BESAMBA.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .G-CALIEZ{
     background-image: url("./img/Guillaume CALIEZ.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .K-PESET{
     background-image: url("./img/Kevin PESET.jpeg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .O-POCHIC{
     background-image: url("./img/Olivier POCHIC.jpeg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .O-COUDERT{
     background-image: url("./img/Ophélie COUDERT.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .O-AGUDELO{
     background-image: url("./img/Oscar AGUDELO.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 .V-IELSCH{
     background-image: url("./img/photovalerie.png"); 
-    background-size: cover;
-    background-position: center;
-    width: 28vw;
-    height: 13vh;
 }
 
 
@@ -442,7 +410,8 @@ div[id^="image"]:hover {
 }
 .photo-profil{
     height: 300px;
-    width: 150px;
+    width: 200px;
+    border-radius: 20px;
     
     background-image: url("./img/Photo Ali BELALA.jpg");
     background-size: cover;
