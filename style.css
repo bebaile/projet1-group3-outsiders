@@ -263,6 +263,7 @@ main.equipe{
     font-weight: bold;
 
     font-family: var(--font-h1);
+    text-align: start;
 }
 
 .equipe h1>span{
@@ -284,24 +285,25 @@ main.equipe{
 
 .equipe-container{
     width: 80%;
-    max-width: 750px;
+    max-width: 600px;
     margin: 0 auto;
     min-height: 170px;
     height: var(--height-section);
 }
-
+/*
 .membre-staff:nth-child(odd){
     background-color: var(--color-light);
-}
+}*/
 .membre-staff:nth-child(odd) > .equipe-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
+/*
 .membre-staff:nth-child(even){
     background-color: var(--color-middle);
-}
+}*/
 .membre-staff:nth-child(even) > .equipe-container{
     display: flex;
     justify-content: space-between;
@@ -313,8 +315,8 @@ main.equipe{
 .portrait-membre{
     min-height: 110px;
     height: calc(var(--height-section) - 60px);
-    width: 45vw;
-    max-width: var(--height-section);
+    min-height: 170px;
+    width:  clamp(160px, 45vw, var(--height-section));
     margin: auto 0;
 }
 
@@ -328,7 +330,7 @@ main.equipe{
 /*
 ** A propos - Basile
 */
-
+/*
 
 header {
     background-image: url("./img/mountain-landscape-gcbb2346f5_1920.jpg");
@@ -410,7 +412,7 @@ div > img {
 
 img#tools {
     max-width: 96px;
-}
+}*/
 
 /*
 ** 404 - ???
