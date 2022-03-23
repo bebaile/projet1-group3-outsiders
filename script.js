@@ -129,6 +129,19 @@ const generatePage = () => {
 */
 
 
+// js pour la page apropos
+
+
+document.querySelector('.tutor').addEventListener('mouseover', function() {
+  document.querySelector('.our-tutor-card').style.display = 'flex';
+});
+
+document.querySelector('.tutor').addEventListener('mouseleave', function() {
+  document.querySelector('.our-tutor-card').style.display = 'none';
+});
+
+
+
 const element = document.querySelector(".S-FEROUSSIER");
 element.addEventListener("click", generateCard);
 

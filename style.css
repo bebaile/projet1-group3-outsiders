@@ -408,8 +408,8 @@ div[id^="image"]:hover {
     justify-content: center;
 }
 .photo-profil{
-    height: 300px;
-    width: 200px;
+    height: 400px;
+    width: 300px;
     border-radius: 20px;
     
     /*background-image: url("./img/Photo Ali BELALA.jpg");
@@ -424,15 +424,17 @@ div[id^="image"]:hover {
     max-width: 100%;
     max-height: 100%;
 
+
     border-radius: 20px;
     margin-top: 1rem;
 }
+
 
 .main-profil{
     display: flex;
     width: 80%;
     height: 200px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 20px auto;
     
@@ -448,29 +450,48 @@ div[id^="image"]:hover {
 }
 
 .descriptif{
-    width: 60%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#titre2{
+   display: flex;
+   justify-content: center; 
+   width: 80%;
+   margin-top: 70px;
 }
 
+#identity{
+    display: flex;
+    padding-bottom: 100px;
+}
     
 .fa-brands,
 .fas,
 .fa-solid{
-    font-size: 2rem;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
     color: var(--color-light);
     background-color: var(--color-dark);
-    padding: 0.5rem;
+    padding: 1.5rem;
     border-radius: 999px;
-    margin: 0.2rem auto;
+    margin: 1rem auto;
 }    
 
-/*
-.text-button{
-    color: var(--color-light);  
-}*/
+
+.button{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 .flex{
     display: flex;
 }
@@ -654,7 +675,59 @@ main.equipe{
 ** A propos - Basile
 */
 
+/* notre tuteur */
+
+.tutor {
+    background-color: var(--color-light);
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutor h1 {
+    font-size: 1rem;
+}
+
+.our-tutor-card {
+    border: 1px dotted rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    display: none;
+    max-width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.tutor-img {
+    width: 200px;
+    
+}
+
+.our-tutor-card img {
+    border-radius: 50%;
+    
+
+}
+
+.our-tutor-subcard {
+    max-width: 65ch;
+    margin:20px
+}
+
+.tutor-links {
+    display: flex;
+}
+
+.tutor-links img {
+    height: 30px;
+}
+
 /* Header - basile */
+
 
 header {
     background-image: url("./img/mountain-landscape-gcbb2346f5_1920.jpg");
@@ -722,6 +795,10 @@ ul {
 }
 
 @media screen and (min-width: 600px) {
+    .our-tutor-card {
+        flex-direction: row;
+    }
+    
     .sub-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
