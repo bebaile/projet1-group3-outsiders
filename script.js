@@ -121,3 +121,15 @@ fetch("./assets/equipe.json")
 });
 
 }
+
+
+// js pour la page apropos
+
+
+document.querySelector('.tutor').addEventListener('mouseover', function() {
+  document.querySelector('.our-tutor-card').style.display = 'flex';
+});
+
+document.querySelector('.tutor').addEventListener('mouseleave', function() {
+  document.querySelector('.our-tutor-card').style.display = 'none';
+});
