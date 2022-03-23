@@ -2,19 +2,62 @@
 /*
 ** Fonction pour gestion de l'affichage du menu en mode mobile
 */
-
+const Toogle = () => {
 const navToggle = document.querySelector('.nav-btn');
 const nav = document.querySelector('.nav__list');
 
 navToggle.addEventListener('click', () => {
     nav.classList.toggle('nav--visible');
 })
+}
 
 
 /*
-** Definition des Objects "membre de l'équipe"
+** génération de la navbar
 */
 
+const generateNavBar = () => {
+    document.querySelector(".nav-menu").innerHTML = `
+    <div>
+        <button class="nav-btn" aria-label="open navigation">
+            <span class="hamburger"></span>
+        </button>
+    
+        <a href="./index.html">
+            <img src="./img/logo_outsiders.png" alt="logo {Ou}Siders" class="nav-logo">
+        </a>
+    </div>
+    
+    <ul class="nav__list">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./apropos.html">A propos</a></li>
+        <li><a href="./equipe.html">L'équipe</a></li>
+    </ul>`
+}
+
+
+/*
+** génération du footer
+*/
+
+const generateFooter = () => {
+    document.querySelector("footer").innerHTML = `
+    <div class="credit">
+        <a href="./profilmembre.html"><p>Liens vers page de profil</p></a>
+    </div>`
+}
+
+/*
+** Fonction permettant de générer les parties communes à l'ensembe des pages
+** Navbar
+** Footer
+*/
+
+const generatePage = () => {
+    generateNavBar();
+    generateFooter();
+    Toogle();
+}
 
 /*
 ** Fonction de génération de la page Equipe en fonction du tableau membreEquipe[]
@@ -42,6 +85,7 @@ fetch("./assets/equipe.json")
 
         const divImg = document.createElement("div");
         divImg.classList.add("portrait-membre");
+        console.log(membreEquipe[i].photo)
         divImg.style.backgroundImage = "url(" + membreEquipe[i].photo + ")";
         divImg.style.backgroundSize = "cover";
         divImg.style.backgroundPosition = "center";
@@ -69,7 +113,6 @@ fetch("./assets/equipe.json")
         complementCard.innerHTML = membreEquipe[i].complement;
         divDescription.appendChild(complementCard);
 
-        console.log("function was lauched !")
     }
 
 })

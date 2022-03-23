@@ -1,19 +1,19 @@
 [{
-    "photo": "https://thispersondoesnotexist.com/image",
+    "photo": "'./img/Photo Ali BELALA.jpg'",
     "nom": "Belala",
     "prenom": "Ali",
-    "poste": "",
+    "poste": "Flexbox Killer",
     "complement": "Ali est en charge de la page de profil des membres et de l'intégration des éléments \"Font Awesome\"."
 },
 {
-    "photo": "https://thispersondoesnotexist.com/image",
-    "nom": "Carl",
+    "photo": "'./img/Basile CARLE.jpg'",
+    "nom": "Carle",
     "prenom": "Basile",
     "poste": "Product Owner",
     "complement": "Basile est en charge de la communication avec le client et de la page \"A propos\"."
 },
 {
-    "photo": "https://thispersondoesnotexist.com/image",
+    "photo": "'./img/FEROUSSIER Stéphane.jpg'",
     "nom": "Feroussier",
     "prenom": "Stéphane",
     "poste": "Grid Warrior",
