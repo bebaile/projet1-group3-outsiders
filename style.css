@@ -81,7 +81,7 @@ p{
     text-align: center;
 
     width: 80%;
-    max-width: 1200px;
+    max-width: 600px;
 
     margin: 0 auto;
 
@@ -103,11 +103,10 @@ p{
   
 
 
-  .main{
+main{
     width: 100%;
     padding: 1em 0 5em 0;
 }
-
 
 /*
 ** Navbar
@@ -370,7 +369,7 @@ div[id^="image"]:hover {
 }
 
 .O-AGUDELO{
-    background-image: url("./img/Oscar AGUDELO.jpg");
+    background-image: url("./img/oscar.png");
 }
 
 .V-IELSCH{
@@ -413,10 +412,10 @@ div[id^="image"]:hover {
     width: 200px;
     border-radius: 20px;
     
-    background-image: url("./img/Photo Ali BELALA.jpg");
+    /*background-image: url("./img/Photo Ali BELALA.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 1.5rem;
+    margin-top: 1.5rem;*/
 
     
 }
@@ -424,6 +423,9 @@ div[id^="image"]:hover {
 .photo-profil img{
     max-width: 100%;
     max-height: 100%;
+
+    border-radius: 20px;
+    margin-top: 1rem;
 }
 
 .main-profil{
@@ -455,6 +457,7 @@ div[id^="image"]:hover {
 
     
 .fa-brands,
+.fas,
 .fa-solid{
     font-size: 2rem;
     color: var(--color-light);
@@ -504,7 +507,7 @@ div[id^="image"]:hover {
   div.item {
     position: absolute;
     top: 10px;
-    width: 400px;
+    width: 350px;
     height: 80%;
     min-height: 570px;
     border-radius: 20px;
@@ -667,7 +670,9 @@ header {
 
 
 /* styles généraux pour main */
-main.apropos{
+
+
+.apropos{
     margin: 0 0.5rem;
     max-width: 600px;
     margin:auto
@@ -739,7 +744,7 @@ ul {
     }
     
     
-    .sub-content-img > img {
+    .sub-content-img img {
         height: 100px;
         margin: 0.5rem 0;
     }
