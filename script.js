@@ -51,8 +51,8 @@ const generateNavBar = () => {
 const generateFooter = () => {
     document.querySelector("footer").innerHTML = `
     <div class="credit">
-      <p>Made with...</p> 
-      <p>V0.9</p>
+      <p>Made with <a href="https://thenounproject.com/" target="_blank">thenounproject.com</a> and <a href="https://fontawesome.com/" target="_blank">fontawesome.com</a></p> 
+      <p><i class="far fa-copyright"></i>Wilders 2022 - <a href="./404.html" class="link404">V0.9</a></p>
     </div>`
 }
 
@@ -81,7 +81,6 @@ fetch("./assets/equipe.json")
 
         const divImg = document.createElement("div");
         divImg.classList.add("portrait-membre");
-        console.log(membreEquipe[i].photo)
         divImg.style.backgroundImage = "url(" + membreEquipe[i].photo + ")";
         divImg.style.backgroundSize = "cover";
         divImg.style.backgroundPosition = "center";
@@ -157,7 +156,6 @@ for (i = 0; i < element.length; i++) {
         .then(function(data) {
             membreOutsiders = data;
             for (let j = 0; j < membreOutsiders.length; j++){
-              console.log(membreOutsiders[j].id)
                 if (classTest === membreOutsiders[j].id){
                     
                     let memberLastName = membreOutsiders[j].nom[0].toUpperCase() + membreOutsiders[j].nom.slice(1).toLowerCase();
