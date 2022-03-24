@@ -689,6 +689,16 @@ main.equipe{
     font-size: 1rem;
 }
 
+.tutor > h1:hover {
+    color: var(--color-ligthestDark);
+    font-size: 1.2rem;
+}
+
+@keyframes tutor-card-animation {
+    from {background-color: var(--color-dark);}
+    to {background-color: white;}
+}
+
 .our-tutor-card {
     border: 1px dotted rgba(0, 0, 0, 0.61);
     border-radius: 10px;
@@ -699,8 +709,12 @@ main.equipe{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    animation-name: tutor-card-animation;
+    animation-duration: 1.5s;
+    
+}    
 
-}
+
 
 .tutor-img {
     width: 200px;
@@ -719,11 +733,14 @@ main.equipe{
 }
 
 .tutor-links {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .tutor-links img {
     height: 30px;
+    width: 30px;
 }
 
 /* Header - basile */
@@ -794,9 +811,18 @@ ul {
     padding: 1rem;
 }
 
+
 @media screen and (min-width: 600px) {
+    
+    
     .our-tutor-card {
         flex-direction: row;
+    }
+
+    .tutor-links {
+        flex-direction: column;
+        width: 12%;
+        padding-left: 1rem;
     }
     
     .sub-content {
