@@ -706,8 +706,8 @@ main.equipe{
 }
 
 @keyframes close-card {
-    from: {display: flex;}
-    to: {display: none;}
+    from {display: flex;}
+    to {display: none;}
     /* animation-name: close-card;
     animation-duration: 2s; */
 }
@@ -743,6 +743,21 @@ main.equipe{
     height: 30px;
     width: 30px;
 }
+
+    
+.tutor-links .fa-brands,
+.tutor-links .fas,
+.tutor-links .fa-solid{
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    padding: 0.5rem;
+    border-radius: 999px;
+    margin: 1rem auto;
+}    
 
 
 /* styles généraux pour main */
