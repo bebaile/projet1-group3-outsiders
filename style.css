@@ -64,7 +64,7 @@ h2{
 }
 
 .equipe h2{
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     margin: 0.415rem 0;
 }
 
@@ -624,7 +624,7 @@ main.equipe{
 
 
 .equipe p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: var(--font-p)
 }
 
@@ -633,7 +633,6 @@ main.equipe{
     max-width: 600px;
     margin: 0 auto;
     min-height: 160px;
-    height: var(--height-section);
 }
 /*
 .membre-staff:nth-child(odd){
@@ -666,7 +665,6 @@ main.equipe{
 
 .description{
     min-height: 120px;
-    height: calc(var(--height-section) - 60px);
     width: 45ch;
 }
 

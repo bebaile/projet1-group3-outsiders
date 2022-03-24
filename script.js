@@ -91,7 +91,7 @@ fetch("./assets/equipe.json")
         divContainer.appendChild(divDescription);
 
         const firstNameLastName = document.createElement("H1");
-        firstNameLastName.innerHTML = membreEquipe[i].nom + " <span> " + membreEquipe[i].prenom + "<span>";
+        firstNameLastName.innerHTML = membreEquipe[i].nom + " " + membreEquipe[i].prenom + "";
         divDescription.appendChild(firstNameLastName);
 
         const posteCard = document.createElement("H2");
@@ -131,12 +131,14 @@ const generatePage = () => {
 
 // js pour la page apropos
 
+/*const elementapropos = document.querySelector('.tutor');
 
-/*document.querySelector('.tutor').addEventListener('mouseover', function() {
+
+elementapropos.addEventListener('mouseover', function() {
   document.querySelector('.our-tutor-card').style.display = 'flex';
 });
 
-document.querySelector('.tutor').addEventListener('mouseleave', function() {
+elementapropos.addEventListener('mouseleave', function() {
   document.querySelector('.our-tutor-card').style.display = 'none';
 });*/
 
