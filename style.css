@@ -658,6 +658,8 @@ main.equipe{
 
 /* notre tuteur */
 
+
+
 .tutor {
     background-color: var(--color-light);
     height: 2rem;
@@ -692,9 +694,27 @@ main.equipe{
     flex-direction: column;
     animation-name: tutor-card-animation;
     animation-duration: 1.5s;
+    position: relative;
     
 }    
 
+.window-button {
+    width: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+@keyframes close-card {
+    from: {display: flex;}
+    to: {display: none;}
+    /* animation-name: close-card;
+    animation-duration: 2s; */
+}
+
+.window-button:hover {
+    filter: invert(100%);
+}
 
 
 .tutor-img {
