@@ -7,9 +7,9 @@
     <title>Trombinoscope - {Out}Siders</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Martel&family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Martel&family=Roboto&display=swap" rel="stylesheet">
+    <body onload="generatePage()">
   </head>
   <body>
         
@@ -31,38 +31,116 @@
             <li><a href="./apropos.html">A propos</a></li>
             <li><a href="./equipe.html">L'équipe</a></li>
         </ul>
-      </nav>
+    </nav>
 
 <!-- Commencez à travailler ici -->
-      <header>
-        <div class="header">
-          <h1>A propos de ce trombinoscope</h1>
-        </div>
-      </header>
-      <button class="button-1" role="button">Découvrez notre formateur</button>
 
+      <div class="tutor">
+        <h1>
+          Découvrez notre enseignant / tuteur
+        </h1>
+      </div>
+      
+      
+      
       <main class="main apropos">
+        <div class="our-tutor-card">
+          <div class="tutor-img">
+            <img src="img/our-tutor.jpeg" alt="Notre formateur bien aimé">
+          </div>
+          <div class="tutor-links">
+            <div>
+              <a href="https://www.linkedin.com/in/anthony-gorski/">
+                <img src="./img/logo_linkedin.png" alt="lien linkedin">
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/GorskiAnthony/">
+                <img src="./img/logo_github.png" alt="lien Github">
+              </a>
+            </div>
+          </div>
+          <div class="our-tutor-subcard">
+            <div>
+              <p>Marseillais d'origine, Anthony est notre formateur JavaScript à la Wild Code School. Concepteur Dévelopeur d'application à son compte depuis octobre 2019, Anthony exerce son activité de formateur depuis octobre 2020, d'abord au Greta puis à Openclassrooms en tant que tuteur et pour la première fois en 2022 à la Wild Code School. </p>
+            </div>
+            <div class="paragraph">
+              <p>D'après son profil Linkedin, Anthony aime les échecs, l'astronomie et le web, bien sûr </p>
+            </div>
+          </div>
+
+        </div>
         <section class="project">
           <div class="sub-content">
-            <div><h2>Le projet</h2></div>
-            <div><img src="./img/icon-project.png" alt="project icon - Project by Komkrit Noenpoempisut from NounProject.com"></div>
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eligendi rem consectetur ea accusamus, voluptates quia rerum a. Deleniti labore ut cum eveniet nisi et numquam aperiam ea, dolorum excepturi?</div>
+            <div class="sub-content-title"><h2>Notre premier projet</h2></div>
+            <div class="sub-content-img"><img src="./img/icon-project.png" alt="project icon - Project by Komkrit Noenpoempisut from NounProject.com"></div>
+            <div class="sub-content-paragraph">
+                <p>
+                  Ce trombinoscope est un projet "pédagogique" réalisé par une <a>équipe d'étudiants</a> à la Wild Code School. Le but de ce projet est de mettre en pratique les éléments d'apprentissages vus pendant ces trois premières semaines de cours sur le cursus développement web.<br><br>
+                  Tous étudiant à distance dans notre promotion, nous ne disposons pas des moyens traditionnels pour faire connaissance. Aussi, à travers ce trombinoscope, nous voulons permettre aux membres de notre groupe de mieux se connaître. Nous avons donc collecté un certain nombres d'informations auprès de nos camarades de cours afin de les mettre en forme sur cette plateforme, certes basique aujourd'hui, mais qui pourrait donner lieu à l'avenir à des fonctionnalités plus évoluées.
+                </p>
+            </div>
           </div>
         </section>
         <section  class="requirements">  
           <div class="sub-content">
-            <div id="specific"><h2>Requirements</h2></div>
-            <div id="specific-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum harum numquam repudiandae necessitatibus hic, ipsam quod ipsum vitae quae, praesentium unde officia cumque. Fugit quidem eaque dicta nihil quaerat sequi?</div>    
-            <div id="specific-image"><img src="./img/icon-requirements.png" alt="requirement icon - Requirement by Kukuh Wachyu Bias from NounProject.com"> </div>
-          </div>
+            <div class="sub-content-title" id="specific-title"><h2>Les critères d'évaluation / attentes du prescripteur</h2></div>
+            <div class="sub-content-img" id="specific-image"><img src="./img/icon-requirements.png" alt="requirement icon - Requirement by Kukuh Wachyu Bias from NounProject.com"> </div>
+            <div class="sub-content-paragraph" id="specific-paragraph">
+              <div>
+                <p>Ce projet sera évalué sur plusieurs critères:</p>
+              </div>
+              <div class="sub-content-paragraph">
+                  <p>Ce trombinoscope est un projet "pédagogique" réalisé par une <a>équipe d'étudiants</a> à la Wild Code School. Le but de ce projet est de mettre en pratique les éléments d'apprentissages vus pendant ces trois premières semaines de cours sur le cursus développement web.<br><br>
+                  Tous étudiant à distance dans notre promotion, nous ne disposons pas des moyens traditionnels pour faire connaissance. Aussi, à travers ce trombinoscope, nous voulons permettre aux membres de notre groupe de mieux se connaître. Nous avons donc collecté un certain nombres d'informations auprès de nos camarades de cours afin de les mettre en forme sur cette plateforme, certes basique aujourd'hui, mais qui pourrait donner lieu à l'avenir à des fonctionnalités plus évoluées.</p>
+              </div>
+            </div>
+          </section>
+          <section  class="requirements">
+            <div class="sub-content">
+              <div class="sub-content-title" id="specific-title"><h2>Les critères d'évaluation / attentes du prescripteur</h2></div>
+              <div class="sub-content-img" id="specific-image"><img src="./img/icon-requirements.png" alt="requirement icon - Requirement by Kukuh Wachyu Bias from NounProject.com"> </div>
+              <div class="sub-content-paragraph" id="specific-paragraph">
+                <div>
+                  <p>Ce projet sera évalué sur plusieurs critères:</p>
+                </div>
+                <div>
+                  <ul>
+                    <li><p>l'utilisation des technologies de base en vue de réaliser un site web statique</p> </li>
+                    <li><p>Un site contenant entre 4 à 6 pages, conçu avec une approche "mobile first"</p></li>
+                    <li><p>la cohérence de l'interface utilisateur (polices, couleur, éléments de mise en page)</p></li>
+                    <li><p>la clarté et la validité du code</p></li>
+                    <li><p>l'utilisation de ressources dans le respect des droits d'auteur</p></li>
+                    <li><p>l'affichage d'une page d'erreur 404 avec une redirection automatique</p></li>
+                    <li><p>mise en place d'un flux de production collaboratif avec une bonne gestion des versions et contributions (commit)</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="tools">
+            <div class="sub-content">
+              <div class="sub-content-title"><h2>Les outils</h2></div>
+              <div class="sub-content-img"><img src="./img/icon-tools.png" alt="tools icon - Tools by Vectorstall from NounProject.com" id="tools"></div>
+              <div class="sub-content-paragraph">
+                <div>
+                  <p>Au cours de ces trois premières semaines d'apprentissage, nous avons vu les bases du développement web (HTML, CSS, Javascript) et de la gestion des flux de production grâce à Git et Github.</p>
+                </div>
+                <div class="paragraph">
+                  <p>Les outils que nous utilisons sont donc:</p>
+                </div>
+                <div>
+                  <ul id="">
+                    <li><p>Microsoft Visual Studio Code pour la production du code HTML, CSS et JS</p></li>
+                    <li><p>l'inspecteur web de nos navigateurs</p></li>
+                    <li><p>Git pour la gestion du versioning et Github pour la gestion des contribution individuelles des membres de l'équipe</p></li>
+                    <li><p>Trello pour la gestion de projet (méthode Kanban) et l'évaluation des tâches à mener</p></li>
+                    <li><p>Discord pour les réunion et travail en équipe </p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
         </section>
-        <section class="tools">
-          <div class="sub-content">
-            <div><h2>Tools</h2></div>
-            <div><img src="./img/icon-tools.png" alt="tools icon - Tools by Vectorstall from NounProject.com" id="tools"></div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id recusandae facilis cupiditate, dolorem odit, illum modi maxime enim expedita, exercitationem blanditiis nisi doloribus dignissimos unde nesciunt. Repellendus a nulla doloribus?</div></div>
-        </section>
-
       </main>
 
 <!-- Ne pas travailler après ce commentaire-->
@@ -70,9 +148,9 @@
     </div> <!-- End of wrapper -->
 
     <!-- Footer need to be out of the wrapper -->
-     
     <footer>
       <div class="credit">
+
       </div>
     </footer>
 
