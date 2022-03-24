@@ -264,7 +264,8 @@ footer, footer a{
 
 
 .image {
-    /*margin:calc((100vh - 82px - 50px - 1050px)/2) auto;*/
+    /*margin: calc((100vh - 82px - 50px - 1050px)/2) auto;*/
+v
     width: 90%;
     max-width: 850px;
     display : grid;
@@ -282,7 +283,6 @@ footer, footer a{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 210px);
     /*margin-top: calc((100vh - 82px - 50px - 850px)/2);*/
-    
 
     }
 }
@@ -304,7 +304,8 @@ div[id^="image"]:hover {
 }
 
 .background{
-    /*background-color: var(--color-dark); */
+    /*background-color: var(--color-dark);*/ 
+
     min-width: 5px;
     width: 100%;
     height: 100%;
@@ -321,6 +322,14 @@ div[id^="image"]:hover {
     background-position: center;
 
     border-radius: 10px;
+}
+
+.A-GORSKI{
+    background-image: url("./img/Anthony GORSKI.png");
+}
+
+.S-PUIGRENIER{
+    background-image: url("./img/Sébastien PUIGRENIER.jpg");
 
 }
 
@@ -369,7 +378,9 @@ div[id^="image"]:hover {
 }
 
 .O-AGUDELO{
+
     background-image: url("./img/oscar.png");
+
 }
 
 .V-IELSCH{
