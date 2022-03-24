@@ -130,20 +130,6 @@ const generatePage = () => {
 */
 
 
-// js pour la page apropos
-
-/*const elementapropos = document.querySelector('.tutor');
-
-
-elementapropos.addEventListener('mouseover', function() {
-  document.querySelector('.our-tutor-card').style.display = 'flex';
-});
-
-elementapropos.addEventListener('mouseleave', function() {
-  document.querySelector('.our-tutor-card').style.display = 'none';
-});*/
-
-
 
 const element = document.querySelectorAll(".accueil-photo");
 
