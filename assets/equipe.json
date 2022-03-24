@@ -20,7 +20,7 @@
     "complement": "Stéphane est en charge de l'index du site."
 },
 {
-    "photo": "https://thispersondoesnotexist.com/image",
+    "photo": "'./img/Sébastien PUIGRENIER.jpg'",
     "nom": "Puigrenier",
     "prenom": "Sébastien",
     "poste": "GitHub Master",

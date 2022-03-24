@@ -1,7 +1,7 @@
 [
     {
-    "id": "none",
-    "photo": "none",
+    "id": "S-PUIGRENIER",
+    "photo": "./img/Sébastien PUIGRENIER.jpg",
     "nom": "Puigrenier",
     "prenom": "Sébastien",
     "github": "https://github.com/sebastienpuigrenier",
@@ -154,8 +154,8 @@
     "email": "olivier-pochic_student2022@wilder.school"
     },
     {
-        "id": "none",
-    "photo": "https://pbs.twimg.com/profile_images/1491013180461625347/PzU--1FL_400x400.png",
+        "id": "A-GORSKI",
+    "photo": "./img/Anthony GORSKI.png",
     "nom": "Gorski",
     "prenom": "Anthony",
     "github": "https://github.com/GorskiAnthony",

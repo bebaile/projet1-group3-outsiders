@@ -51,7 +51,8 @@ const generateNavBar = () => {
 const generateFooter = () => {
     document.querySelector("footer").innerHTML = `
     <div class="credit">
-        <a href="./profilmembre.html"><p>Liens vers page de profil</p></a>
+      <p>Made with...</p> 
+      <p>V0.9</p>
     </div>`
 }
 
@@ -197,13 +198,13 @@ for (i = 0; i < element.length; i++) {
                                <div class="button">
                                <div> 
                                  <div>
-                                   <a href="${membreOutsiders[j].github}"><i class="fa-brands fa-github"></i></a>
+                                   <a href="${membreOutsiders[j].github}" target="_blank"><i class="fa-brands fa-github"></i></a>
                                  </div>
                                  <div>
-                                   <a href="${membreOutsiders[j].linkedin}"><i class="fa-brands fa-linkedin"></i></a>
+                                   <a href="${membreOutsiders[j].linkedin}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                                  </div>
                                  <div>
-                                   <a href="${membreOutsiders[j].email}"><i class="fas fa-envelope"></i></i></a>
+                                   <a href="mailto:${membreOutsiders[j].email}"><i class="fas fa-envelope"></i></i></a>
                                  </div>
                                  <div>
                                    <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
