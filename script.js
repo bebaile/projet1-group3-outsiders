@@ -162,12 +162,12 @@ for (i = 0; i < element.length; i++) {
                     
                     let memberLastName = membreOutsiders[j].nom[0].toUpperCase() + membreOutsiders[j].nom.slice(1).toLowerCase();
                     let memberFirstName = membreOutsiders[j].prenom[0].toUpperCase() + membreOutsiders[j].prenom.slice(1).toLowerCase();
-                    let generatedHtml = `
-                    <div class="carousel"> 
+                    let generatedHtml = `      
+                    <div class="carousel">
                     <input type="radio" name="position" />
                     <input type="radio" name="position" checked/>
                     <input type="radio" name="position" />
-                      <main id="carousel">
+                      <div id="carousel">
                             <!-- première carte-->
                           <div class="item">
                             <div class="descriptif">
@@ -175,45 +175,44 @@ for (i = 0; i < element.length; i++) {
                                 <p>${membreOutsiders[j].hobbys}</p>
                               <h2 id="titre2">Pourquoi j'ai voulu être développeur web?</h2>
                                 <p>${membreOutsiders[j].why}</p>
-                            </div> 
+                           </div> 
                           </div>
-                    
                           <!-- deuxième carte -->
                           <div class="item" id="alibelala">
                             <div class="profil-container">
                               <div class="photo-profil">
-                                <img src="${membreOutsiders[j].photo}" alt="" srcset="">
+                                <img src="${membreOutsiders[j].photo}" alt="photo d'Ali Belala" >
                               </div >
                             </div>
                             <div class="main-profil">
-                              <div class="descriptif">            
-                                <h1 id="identity">${memberLastName}  ${memberFirstName}</h1> 
-                              </div> 
+                              <div class="descriptif">
+                              <h1 id="identity">${memberLastName}  ${memberFirstName}</h1> 
+                              </div>
                             </div>
                           </div>
-                    
                           <!-- troisième carte-->
                           <div class="item">
                             <!-- <div class="main-profil">-->
                                <div class="button">
-                               <div> 
-                                 <div>
-                                   <a href="${membreOutsiders[j].github}" target="_blank"><i class="fa-brands fa-github"></i></a>
-                                 </div>
-                                 <div>
-                                   <a href="${membreOutsiders[j].linkedin}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                                 </div>
-                                 <div>
-                                   <a href="mailto:${membreOutsiders[j].email}"><i class="fas fa-envelope"></i></i></a>
-                                 </div>
-                                 <div>
-                                   <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
-                                 </div>
-                               </div>
+                                <div>
+                                        <div>
+                                          <a href="${membreOutsiders[j].github}" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                        </div>
+                                        <div>
+                                          <a href="${membreOutsiders[j].linkedin}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                        <div>
+                                          <a href="mailto:${membreOutsiders[j].email}"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                        <div>
+                                          <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                        </div>
+                                </div>
                                </div>
                              </div>
                            </div>
-                       </main>
+                          </div>
+                    
                     </div>
                     `;
             const newpage = document.querySelector("main").innerHTML = generatedHtml;

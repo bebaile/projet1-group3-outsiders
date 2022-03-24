@@ -267,7 +267,6 @@ footer, footer a{
 
 
 .image {
-    /*margin: calc((100vh - 82px - 50px - 1050px)/2) auto;*/
     width: 90%;
     max-width: 850px;
     display : grid;
@@ -284,12 +283,11 @@ footer, footer a{
     .image{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 210px);
-    /*margin-top: calc((100vh - 82px - 50px - 850px)/2);*/
 
     }
 }
 
-div[id^="image"] {
+.image-profil {
     transform-origin: center center;
     -webkit-transition: .3s ease-in-out; /* Safari et Chrome */
     -moz-transition: .3s ease-in-out; /* Firefox */
@@ -297,7 +295,7 @@ div[id^="image"] {
     -o-transition: .3s ease-in-out; /* Opera */
     transition: .3s ease-in-out;
 }
-div[id^="image"]:hover {
+.image-profil:hover {
     -webkit-transform:scale(1.25); /* Safari et Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* Internet Explorer 9 */
@@ -306,7 +304,6 @@ div[id^="image"]:hover {
 }
 
 .background{
-    /*background-color: var(--color-dark);*/ 
 
     min-width: 5px;
     width: 100%;
@@ -329,56 +326,56 @@ div[id^="image"]:hover {
 }
 
 .A-GORSKI{
-    background-image: url("./img/Anthony GORSKI.png");
+    background-image: url("./img/Anthony_GORSKI.png");
 }
 
 .S-PUIGRENIER{
-    background-image: url("./img/Sébastien PUIGRENIER.jpg");
+    background-image: url("./img/Sébastien_PUIGRENIER.jpg");
 
 }
 
 .S-FEROUSSIER{
-    background-image: url("./img/FEROUSSIER Stéphane.jpg");
+    background-image: url("./img/FEROUSSIER_Stéphane.jpg");
 }
 
 .A-BELALA{
-    background-image: url("./img/Photo Ali BELALA.jpg");
+    background-image: url("./img/Photo_Ali_BELALA.jpg");
 }
 
 .B-CARLE{
-    background-image: url("./img/Basile CARLE.jpg");
+    background-image: url("./img/Basile_CARLE.jpg");
 }
 
 .A-MESBAHI{
-    background-image: url("./img/Abdallah MESBAHI.jpg");
+    background-image: url("./img/Abdallah_MESBAHI.jpg");
 }
 
 .A-FLOCH{
-    background-image: url("./img/Audren FLOCH.jpg");
+    background-image: url("./img/Audren_FLOCH.jpg");
 }
 
 .C-BOINET{
-    background-image: url("./img/Christophe BOINET.jpeg");
+    background-image: url("./img/Christophe_BOINET.jpeg");
 }
 
 .G-BESAMBA{
-    background-image: url("./img/Gloria BESAMBA.jpg");
+    background-image: url("./img/Gloria_BESAMBA.jpg");
 }
 
 .G-CALIEZ{
-    background-image: url("./img/Guillaume CALIEZ.jpg");
+    background-image: url("./img/Guillaume_CALIEZ.jpg");
 }
 
 .K-PESET{
-    background-image: url("./img/Kevin PESET.jpeg");
+    background-image: url("./img/Kevin_PESET.jpeg");
 }
 
 .O-POCHIC{
-    background-image: url("./img/Olivier POCHIC.jpeg");
+    background-image: url("./img/Olivier_POCHIC.jpeg");
 }
 
 .O-COUDERT{
-    background-image: url("./img/Ophélie COUDERT.jpg");
+    background-image: url("./img/Ophélie_COUDERT.jpg");
 }
 
 .O-AGUDELO{
@@ -398,10 +395,6 @@ div[id^="image"]:hover {
 */
 
 
-.main{
-    width: 100%;
-    padding: 0;
-}
 
 .profil-container{
     width: 100%;
@@ -426,11 +419,6 @@ div[id^="image"]:hover {
     height: 400px;
     width: 300px;
     border-radius: 20px;
-    
-    /*background-image: url("./img/Photo Ali BELALA.jpg");
-    background-size: cover;
-    background-position: center;
-    margin-top: 1.5rem;*/
 
     
 }
@@ -473,7 +461,7 @@ div[id^="image"]:hover {
     align-items: center;
     margin: 0 auto;
 }
-#titre2{
+.titre2{
    display: flex;
    justify-content: center; 
    width: 80%;
@@ -522,7 +510,7 @@ div[id^="image"]:hover {
     
   }
   
-  main#carousel {
+  div#carousel {
     margin: 10vh 0 10vh 0;
     grid-row: 1 / 2;
     grid-column: 1 / 8;
@@ -537,7 +525,6 @@ div[id^="image"]:hover {
     --items: 5;
     --middle: 3;
     --position: 1;
-    /*pointer-events: none;*/
   }
   
   div.item {
@@ -582,7 +569,7 @@ div[id^="image"]:hover {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
-  input:nth-of-type(1):checked ~ main#carousel {
+  input:nth-of-type(1):checked ~ div#carousel {
     --position: 1;
   }
   
@@ -590,7 +577,7 @@ div[id^="image"]:hover {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
-  input:nth-of-type(2):checked ~ main#carousel {
+  input:nth-of-type(2):checked ~ div#carousel {
     --position: 2;
   }
   
@@ -598,7 +585,7 @@ div[id^="image"]:hover {
     grid-column: 4 /5;
     grid-row: 2 / 3;
   }
-  input:nth-of-type(3):checked ~ main#carousel {
+  input:nth-of-type(3):checked ~ div#carousel {
     --position: 3;
   }
   
@@ -606,7 +593,7 @@ div[id^="image"]:hover {
     grid-column: 5 / 6;
     grid-row: 2 / 3;
   }
-  input:nth-of-type(4):checked ~ main#carousel {
+  input:nth-of-type(4):checked ~ div#carousel {
     --position: 4;
   }
   
@@ -614,7 +601,7 @@ div[id^="image"]:hover {
     grid-column: 6 / 7;
     grid-row: 2 / 3;
   }
-  input:nth-of-type(5):checked ~ main#carousel {
+  input:nth-of-type(5):checked ~ div#carousel {
     --position: 5;
   }
    
@@ -649,20 +636,14 @@ main.equipe{
     margin: 0 auto;
     min-height: 160px;
 }
-/*
-.membre-staff:nth-child(odd){
-    background-color: var(--color-light);
-}*/
+
 .membre-staff:nth-child(odd) > .equipe-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
-/*
-.membre-staff:nth-child(even){
-    background-color: var(--color-middle);
-}*/
+
 .membre-staff:nth-child(even) > .equipe-container{
     display: flex;
     justify-content: space-between;
@@ -755,21 +736,6 @@ main.equipe{
     height: 30px;
     width: 30px;
 }
-
-/* Header - basile */
-
-
-header {
-    background-image: url("./img/mountain-landscape-gcbb2346f5_1920.jpg");
-    background-size: cover;
-    height: 300px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 
 
 /* styles généraux pour main */
@@ -889,40 +855,11 @@ ul {
 }
 
 
-/* style specific to the midle subcontent */
-
-/* #specific-title {
-    grid-column: 1/4;
-}
-
-#specific h2 {
-    text-align: left;
-}
-
-#specific-paragraph {
-    grid-column: 1/3;
-    text-align: left;
-}
-
-#specific-paragraph ul li {
-    margin-left: 1rem;
-    text-align: left;
-}
-
-
-#specific-image {
-    grid-column: 3/4;
-    text-align: right;
-} */
-
 /* affichage specific img tools */
 img#tools {
     max-width: 96px;
 }
 
-#tools div ul {
-    
-}
 
 
 /*
