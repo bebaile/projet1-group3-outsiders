@@ -33,7 +33,7 @@
     "email": "alouch74160@gmail.com"
     },
     {
-        "id": "B-CARLE",
+    "id": "B-CARLE",
     "photo": "./img/Basile_CARLE.jpg",
     "nom": "Carle",
     "prenom": "Basile",
@@ -44,7 +44,7 @@
     "email": "basile.carle@edhec.com"
     },
     {
-        "id": "K-PESET",
+    "id": "K-PESET",
     "photo": "/img/Kevin_PESET.jpeg",
     "nom": "Peset",
     "prenom": "Kevin",
@@ -55,7 +55,7 @@
     "email": "kevin.peset@gmail.com"
     },
     {
-        "id": "G-CALIEZ",
+    "id": "G-CALIEZ",
     "photo": "./img/Guillaume_CALIEZ.jpg",
     "nom": "CALIEZ",
     "prenom": "GUILLAUME",
@@ -66,7 +66,7 @@
     "email": "caliezguillaume@live.fr"
     },
     {
-        "id": "G-BESAMBA",
+    "id": "G-BESAMBA",
     "photo": "./img/Gloria_BESAMBA.jpg",
     "nom": "BESAMBA",
     "prenom": "GLORIA",
@@ -77,7 +77,7 @@
     "email": "gloria.besamba@gmail.com"
     },
     {
-        "id": "O-COUDERT",
+    "id": "O-COUDERT",
     "photo": "./img/Ophélie_COUDERT.jpg",
     "nom": "Coudert",
     "prenom": "Ophélie",
@@ -88,7 +88,7 @@
     "email": "ophelie.coudert@gmail.com"
     },
     {
-        "id": "C-BOINET",
+    "id": "C-BOINET",
     "photo": "./img/Christophe_BOINET.jpeg",
     "nom": "BOINET",
     "prenom": "CHRISTOPHE",
@@ -99,7 +99,7 @@
     "email": "boinet.c19@free.fr"
     },
     {
-        "id": "A-FLOCH",
+    "id": "A-FLOCH",
     "photo": "./img/Audren_FLOCH.jpg",
     "nom": "Floch",
     "prenom": "Audren",
@@ -110,7 +110,7 @@
     "email": "a.floch@outlook.fr"
     },
     {
-        "id": "V-IELSCH",
+    "id": "V-IELSCH",
     "photo": "/img/photovalerie.png",
     "nom": "IELSCH",
     "prenom": "Valérie",
@@ -121,7 +121,7 @@
     "email": "valerie.ielsch@gmail.com"
     },
     {
-        "id": "A-MESBAHI",
+    "id": "A-MESBAHI",
     "photo": "./img/Abdallah_MESBAHI.jpg",
     "nom": "Mesbahi",
     "prenom": "Abdallah",
@@ -132,7 +132,7 @@
     "email": "a.mesbahi92@gmail.com"
     },
     {
-        "id": "O-AGUDELO",
+    "id": "O-AGUDELO",
     "photo": "./img/oscar.png",
     "nom": "AGUDELO",
     "prenom": "OSCAR",
@@ -143,7 +143,7 @@
     "email": "oscar.agudelo.pro@gmail.com"
     },
     {
-        "id": "O-POCHIC",
+    "id": "O-POCHIC",
     "photo": "./img/Olivier_POCHIC.jpeg",
     "nom": "pochic",
     "prenom": "olivier",
@@ -154,7 +154,7 @@
     "email": "olivier-pochic_student2022@wilder.school"
     },
     {
-        "id": "A-GORSKI",
+    "id": "A-GORSKI",
     "photo": "./img/Anthony_GORSKI.png",
     "nom": "Gorski",
     "prenom": "Anthony",

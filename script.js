@@ -209,3 +209,78 @@ for (i = 0; i < element.length; i++) {
         console.log(error);
         });
 })};
+
+const generate404 = () => {
+  const randomCard = (Math.floor(Math.random() * 15) + 1);
+
+  fetch("./assets/membres.json")
+  .then((resp) => resp.json())
+  .then(function(data) {
+      membreOutsiders = data;
+              
+              let memberLastName = membreOutsiders[randomCard].nom[0].toUpperCase() + membreOutsiders[randomCard].nom.slice(1).toLowerCase();
+              let memberFirstName = membreOutsiders[randomCard].prenom[0].toUpperCase() + membreOutsiders[randomCard].prenom.slice(1).toLowerCase();
+              let generatedHtml = `      
+              <div class="carousel">
+              <input type="radio" name="position" />
+              <input type="radio" name="position" checked/>
+              <input type="radio" name="position" />
+                <div id="carousel">
+                      <!-- première carte-->
+                    <div class="item">
+                      <div class="descriptif">
+                        <h2 id="titre2">Hobbies</h2>
+                          <p>${membreOutsiders[randomCard].hobbys}</p>
+                        <h2 id="titre2">Pourquoi j'ai voulu être développeur web?</h2>
+                          <p>${membreOutsiders[randomCard].why}</p>
+                     </div> 
+                    </div>
+                    <!-- deuxième carte -->
+                    <div class="item" id="alibelala">
+                      <div class="profil-container">
+                        <div class="photo-profil">
+                          <img src="${membreOutsiders[randomCard].photo}" alt="photo d'Ali Belala" >
+                        </div >
+                      </div>
+                      <div class="main-profil">
+                        <div class="descriptif">
+                        <h1 id="identity">${memberLastName}  ${memberFirstName}</h1> 
+                        </div>
+                      </div>
+                    </div>
+                    <!-- troisième carte-->
+                    <div class="item">
+                      <!-- <div class="main-profil">-->
+                         <div class="button">
+                          <div>
+                                  <div>
+                                    <a href="${membreOutsiders[randomCard].github}" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                  </div>
+                                  <div>
+                                    <a href="${membreOutsiders[randomCard].linkedin}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                  </div>
+                                  <div>
+                                    <a href="mailto:${membreOutsiders[randomCard].email}"><i class="fas fa-envelope"></i></a>
+                                  </div>
+                                  <div>
+                                    <a href="./index.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                  </div>
+                          </div>
+                         </div>
+                       </div>
+                     </div>
+                    </div>
+              
+              </div>
+              `;
+      const newpage = document.querySelector("main").innerHTML = generatedHtml;
+          
+
+     
+
+  })
+  .catch(function(error) {
+  console.log(error);
+  });
+
+}
