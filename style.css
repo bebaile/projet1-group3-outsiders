@@ -421,8 +421,8 @@ div[id^="image"]:hover {
 }
 
 .photo-profil img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 300px;
+  max-width: 100%;
 
 
     border-radius: 20px;

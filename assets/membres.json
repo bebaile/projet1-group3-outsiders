@@ -22,8 +22,8 @@
     "email": "stephane.feroussier@gmail.com"
     },
     {
-    "id": "none",
-    "photo": "Sur le drive",
+    "id": "A-BELALA",
+    "photo": "./img/Photo Ali BELALA.jpg",
     "nom": "BELALA",
     "prenom": "Ali",
     "github": "https://github.com/alouch74",
@@ -33,8 +33,8 @@
     "email": "alouch74160@gmail.com"
     },
     {
-        "id": "none",
-    "photo": "https://scontent-cdt1-1.xx.fbcdn.net/v/t31.18172-8/459923_10151350320421292_1014150580_o.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LdIrfYLU82oAX_3uyIK&_nc_ht=scontent-cdt1-1.xx&oh=00_AT8FwtH8eftP7Ls-Ntw5tSkx2jSWQrwxk37aMaqpmyCjQQ&oe=6258B2F2Lien vers votre photo",
+        "id": "B-CARLE",
+    "photo": "./img/Basile CARLE.jpg",
     "nom": "Carle",
     "prenom": "Basile",
     "github": "https://github.com/bebaileLien vers votre GitHub",
@@ -44,8 +44,8 @@
     "email": "basile.carle@edhec.com"
     },
     {
-        "id": "none",
-    "photo": "https://imgur.com/a/zcHZTwW",
+        "id": "K-PESET",
+    "photo": "/img/Kevin PESET.jpeg",
     "nom": "Peset",
     "prenom": "Kevin",
     "github": "https://github.com/kpeset/",
@@ -55,8 +55,8 @@
     "email": "kevin.peset@gmail.com"
     },
     {
-        "id": "none",
-    "photo": "https://ibb.co/8gn3xqP",
+        "id": "G-CALIEZ",
+    "photo": "./img/Guillaume CALIEZ.jpg",
     "nom": "CALIEZ",
     "prenom": "GUILLAUME",
     "github": "https://github.com/guillaumec85",
@@ -66,8 +66,8 @@
     "email": "caliezguillaume@live.fr"
     },
     {
-        "id": "none",
-    "photo": "https://i.ibb.co/y58Vq4z/IMG-20220130-125233.jpg",
+        "id": "G-BESAMBA",
+    "photo": "./img/Gloria BESAMBA.jpg",
     "nom": "BESAMBA",
     "prenom": "GLORIA",
     "github": "https://github.com/LAZA-GLORIA",
@@ -77,8 +77,8 @@
     "email": "gloria.besamba@gmail.com"
     },
     {
-        "id": "none",
-    "photo": "https://zupimages.net/viewer.php?id=22/11/jiot.jpg",
+        "id": "O-COUDERT",
+    "photo": "./img/Ophélie COUDERT.jpg",
     "nom": "Coudert",
     "prenom": "Ophélie",
     "github": "https://github.com/Crab-Prog",
@@ -88,8 +88,8 @@
     "email": "ophelie.coudert@gmail.com"
     },
     {
-        "id": "none",
-    "photo": "https://www.dropbox.com/s/oqozywxujz1ozv6/_L7A0729.jpg?dl=0",
+        "id": "C-BOINET",
+    "photo": "./img/Christophe BOINET.jpeg",
     "nom": "BOINET",
     "prenom": "CHRISTOPHE",
     "github": "https://github.com/ChristopheBoinet",
@@ -99,8 +99,8 @@
     "email": "boinet.c19@free.fr"
     },
     {
-        "id": "none",
-    "photo": "https://ibb.co/VSX6sSj",
+        "id": "A-FLOCH",
+    "photo": "./img/Audren FLOCH.jpg",
     "nom": "Floch",
     "prenom": "Audren",
     "github": "https://github.com/Audren-FLOCH",
@@ -110,8 +110,8 @@
     "email": "a.floch@outlook.fr"
     },
     {
-        "id": "none",
-    "photo": "https://drive.google.com/file/d/1fjO_M31SvDlvgDu6t4NQq9EgiUQWWUUi/view?usp=sharing",
+        "id": "V-IELSCH",
+    "photo": "/img/photovalerie.png",
     "nom": "IELSCH",
     "prenom": "Valérie",
     "github": "https://github.com/val0sch",
@@ -121,8 +121,8 @@
     "email": "valerie.ielsch@gmail.com"
     },
     {
-        "id": "none",
-    "photo": "https://ibb.co/J3q87tb",
+        "id": "A-MESBAHI",
+    "photo": "./img/Abdallah MESBAHI.jpg",
     "nom": "Mesbahi",
     "prenom": "Abdallah",
     "github": "https://github.com/Devo92",
@@ -132,8 +132,8 @@
     "email": "a.mesbahi92@gmail.com"
     },
     {
-        "id": "none",
-    "photo": "https://docs.google.com/drawings/d/18I68nDC-61w41uCqiJti-L0qL-xHsBWQEJK4PSyZXvc/edit?usp=sharing",
+        "id": "O-AGUDELO",
+    "photo": "./img/oscar.png",
     "nom": "AGUDELO",
     "prenom": "OSCAR",
     "github": "https://github.com/Oscar-AGUDELO",
@@ -143,8 +143,8 @@
     "email": "oscar.agudelo.pro@gmail.com"
     },
     {
-        "id": "none",
-    "photo": "https://drive.google.com/file/d/1IXvu9zrPzOf4spPaBCiiIL1wgqlDvUq0/view?usp=sharing",
+        "id": "O-POCHIC",
+    "photo": "./img/Olivier POCHIC.jpeg",
     "nom": "pochic",
     "prenom": "olivier",
     "github": "https://github.com/propod-op",
@@ -165,3 +165,4 @@
     "email": "anthony.gorski@wildcodeschool.com"
     }
 ]
+
