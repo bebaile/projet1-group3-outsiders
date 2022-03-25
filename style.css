@@ -670,9 +670,10 @@ main.equipe{
 
 .tutor h1 {
     font-size: 1rem;
+    margin-top: 0;
 }
 
-.tutor > h1:hover {
+.tutor div > h1:hover {
     color: var(--color-ligthestDark);
     font-size: 1.2rem;
 }
