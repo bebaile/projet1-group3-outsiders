@@ -718,12 +718,7 @@ main.equipe{
     right: -10px;
 }
 
-@keyframes close-card {
-    from: {display: flex;}
-    to: {display: none;}
-    /* animation-name: close-card;
-    animation-duration: 2s; */
-}
+
 
 .window-button:hover {
     filter: invert(100%);
@@ -732,6 +727,13 @@ main.equipe{
 
 .tutor-img {
     width: 200px;
+    height: 200px;
+
+}
+
+.tutor-img img {
+    width: 190px;
+    height: 190px;
     
 }
 
@@ -742,7 +744,7 @@ main.equipe{
 }
 
 .our-tutor-subcard {
-    max-width: 65ch;
+    max-width: 40ch;
     margin:20px
 }
 
@@ -821,10 +823,16 @@ ul {
         flex-direction: row;
     }
 
+    .tutor-img img {
+        width: 160px;
+        height: 160px;
+    }
+    
+
     .tutor-links {
         flex-direction: column;
         width: 12%;
-        padding-left: 1rem;
+        margin-left: 1rem;
     }
     
     .sub-content {
