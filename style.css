@@ -911,9 +911,17 @@ img#tools {
 }
 
 .Header404 h1{
-    font-size: 15rem;
+    font-size: 10rem;
     color: var(--color-dark);
     margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 600px) {
+    
+.Header404 h1{
+    font-size: 15rem;
+    }
 }
 
 .Header404 h1,
