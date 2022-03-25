@@ -273,7 +273,7 @@ const generate404 = () => {
               
               </div>
               `;
-      const newpage = document.querySelector("main").innerHTML = generatedHtml;
+      const newpage = document.querySelector(".randomCarrousel").innerHTML = generatedHtml;
           
 
      

@@ -887,3 +887,37 @@ img#tools {
 /*
 ** 404 - ???
 */
+
+.Header404{
+    margin-top: 2rem;
+}
+
+.Header404 h1::before{
+    content: '';
+    display: block;
+
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-dark);
+}
+
+.Header404 h1::after{
+    content: '';
+    display: block;
+
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-dark);
+}
+
+.Header404 h1{
+    font-size: 15rem;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+}
+
+.Header404 h1,
+.Header404 h2,
+.Header404 p{
+    text-align: center;
+}
