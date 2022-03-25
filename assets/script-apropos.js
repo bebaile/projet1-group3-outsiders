@@ -1,4 +1,4 @@
-document.querySelector('.tutor').addEventListener('mouseover', function() {
+document.querySelector('.tutor h1').addEventListener('mouseover', function() {
     document.querySelector('.our-tutor-card').style.display = 'flex';
   });
   
