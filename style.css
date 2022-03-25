@@ -686,8 +686,8 @@ main.equipe{
 .our-tutor-card {
     border: 1px dotted rgba(0, 0, 0, 0.61);
     border-radius: 10px;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
     display: none;
     max-width: 600px;
     justify-content: space-between;
@@ -713,8 +713,8 @@ main.equipe{
 
 
 .tutor-img {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 
 }
 
@@ -731,7 +731,7 @@ main.equipe{
 }
 
 .our-tutor-subcard {
-    max-width: 40ch;
+    max-width: 65ch;
     margin:20px
 }
 
@@ -833,8 +833,12 @@ ul {
 
     .tutor-links {
         flex-direction: column;
-        width: 12%;
-        margin-left: 1rem;
+        width: 1rem;
+    }
+
+    .our-tutor-subcard {
+        max-width: 40ch;
+        margin: 1px;0px
     }
     
     .sub-content {
