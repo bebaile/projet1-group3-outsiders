@@ -52,7 +52,7 @@ const generateFooter = () => {
     document.querySelector("footer").innerHTML = `
     <div class="credit">
       <p>Made with <a href="https://thenounproject.com/" target="_blank">thenounproject.com</a> and <a href="https://fontawesome.com/" target="_blank">fontawesome.com</a></p> 
-      <p><i class="far fa-copyright"></i>Wilders 2022 - <a href="./404.html" class="link404">V0.9</a></p>
+      <p><i class="far fa-copyright"></i>Wilders 2022 - <a href="./404.html" class="link404">V1.0</a></p>
     </div>`
 }
 
